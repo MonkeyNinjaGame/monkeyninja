@@ -12,4 +12,4 @@
 
 🚀OPENSEA: https://opensea.io/collection/monkey-ninjas
 
-<img src="./src/assets/3.png">
+<img src="./src/assets/ninja-trio.png">
