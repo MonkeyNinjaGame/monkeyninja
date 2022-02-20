@@ -1,0 +1,356 @@
+/* COLORS */
+/* Red: #b80000 */
+/* Gold: #ffb148 */
+/* Light Gold: #f4db73 */
+/* Charcoal: #222222 */
+/* Dark Border: #111111 */
+/* White: #ffffff */
+/* Grey Text: #cccccc */
+
+/*** PRELOADER ***/
+.preload {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  z-index: 99999;
+  background: #b80000;
+  transition: opacity 0.5s ease;
+}
+
+.loader {
+  animation: spinload 1s linear 0s infinite forwards;
+  width: 100px;
+}
+
+@keyframes spinload {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/*** SOCIAL SIDEBAR ***/
+.sidebar {
+  position: fixed;
+  top: 80px;
+  right: -60px;
+  z-index: 10;
+  animation: popin 0.5s linear 5s 1 forwards;
+}
+
+.sidebarMenu {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 500;
+  width: auto;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  border-right: 0;
+  border-radius: 15px 0 0 15px;
+  padding: 5px 0;
+}
+
+.sidebar .ant-menu {
+  background: transparent;
+}
+
+.socialImage {
+  height: 22px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.socialItem {
+  background: transparent;
+  padding: 12px;
+  margin: 0;
+  border-radius: 0;
+}
+
+@keyframes popin {
+  0% {
+    top: 80px;
+    right: -60px;
+  }
+  100% {
+    top: 80px;
+    right: -1px;
+  }
+}
+
+/*** THROWING STARS ***/
+.fly {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 20%;
+  left: 90%;
+  opacity: 0;
+  z-index: 999;
+  animation: slidein 0.2s linear 8s 1 forwards;
+}
+
+.fly2 {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 80%;
+  right: 90%;
+  opacity: 0;
+  z-index: 999;
+  animation: slidein2 0.2s linear 10s 1 forwards;
+}
+
+.rotate {
+  animation: rotation 0.2s linear 8s 1 reverse;
+}
+
+.rotate2 {
+  animation: rotation 0.2s linear 10s 1 forwards;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(3000deg);
+  }
+}
+
+@keyframes slidein {
+  0% {
+    left: 90%;
+    top: 20%;
+    opacity: 0;
+    width: 40px;
+  }
+  1% {
+    left: 90%;
+    top: 20%;
+    opacity: 1;
+    width: 40px;
+  }
+  100% {
+    left: -30px;
+    top: 40%;
+    opacity: 1;
+    width: 120px;
+  }
+}
+
+@keyframes slidein2 {
+  0% {
+    right: 90%;
+    top: 20%;
+    opacity: 0;
+    width: 300px;
+  }
+  1% {
+    right: 90%;
+    top: 20%;
+    opacity: 1;
+    width: 300px;
+  }
+  100% {
+    right: -25px;
+    top: 60%;
+    opacity: 1;
+    width: 100px;
+  }
+}
+
+/*** NINJA FADEIN ***/
+.ninja-fade {
+  filter: blur(100px);
+  animation: blurin 2s linear 3s forwards;
+}
+
+@keyframes blurin {
+  0% {
+    -webkit-filter: blur(100px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
+
+/*** HEADER POP ***/
+.hero .inner2 {
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: 0;
+  animation: pop 0.2s linear 3s forwards;
+}
+
+@keyframes pop {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menuContain {
+    width: 70px;
+    margin-left: auto;
+  }
+  @keyframes slidein {
+    0% {
+      left: 90%;
+      top: 20%;
+      opacity: 0;
+      width: 20px;
+    }
+    1% {
+      left: 90%;
+      top: 20%;
+      opacity: 1;
+      width: 20px;
+    }
+    100% {
+      left: -20px;
+      top: 40%;
+      opacity: 1;
+      width: 80px;
+    }
+  }
+  @keyframes slidein2 {
+    0% {
+      right: 90%;
+      top: 20%;
+      opacity: 0;
+      width: 200px;
+    }
+    1% {
+      right: 90%;
+      top: 20%;
+      opacity: 1;
+      width: 200px;
+    }
+    100% {
+      right: -15px;
+      top: 60%;
+      opacity: 1;
+      width: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    position: fixed;
+    top: initial;
+    bottom: -60px;
+    right: initial;
+    animation: popin 0.5s linear 5s 1 forwards;
+    width: 100%;
+    background: #222;
+  }
+
+  .sidebarMenu {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    justify-content: center;
+    background: transparent;
+    border: 0;
+    border-right: 0;
+    border-radius: 15px 0 0 15px;
+    padding: 5px 0;
+  }
+
+  .sidebar .ant-menu {
+    background: transparent;
+    width: 100%;
+  }
+
+  .socialImage {
+    height: 22px;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .socialItem {
+    background: transparent;
+    padding: 12px;
+    margin: 0;
+    border-radius: 0;
+    width: 14.28571428571429%;
+  }
+
+  @keyframes popin {
+    0% {
+      top: initial;
+      bottom: -40px;
+      right: initial;
+    }
+    100% {
+      top: initial;
+      bottom: 0px;
+      right: initial;
+    }
+  }
+}

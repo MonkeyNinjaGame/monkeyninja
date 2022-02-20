@@ -1,0 +1,57 @@
+.roadmap {
+  background: #b80000;
+  width: 100%;
+  min-height: 90vh;
+  padding: 8rem 6.4rem;
+  text-align: center;
+  /*background: url("../../assets/bg-01.png");
+  background-attachment: fixed;
+  background-size: cover;*/
+}
+
+.roadmap p {
+  font-size: 22px;
+  color: #ccc;
+}
+
+/*.roadmap img {
+  width: 100%;
+  padding: 8rem 6.4rem;
+}*/
+
+.roadmap img.stepImage {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.roadmap li {
+  color: #ccc;
+  line-height: 1.4em;
+  font-size: 22px;
+}
+
+.rmlist {
+  list-style: none !important;
+  margin-bottom: 1rem !important;
+}
+
+.rmlist li:before {
+  content: "✓";
+  color: #f4db73;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .roadmap {
+    padding: 8rem 0 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .roadmap {
+    padding: 8rem 0 4rem;
+  }
+}

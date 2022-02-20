@@ -1,0 +1,91 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  padding: 8rem 6.4rem;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  background-image: url("assets/bg-home-01.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-y: hidden;
+}
+
+.hero .inner1 {
+  align-self: center;
+  flex-basis: 60%;
+  padding: 1rem;
+}
+
+.hero .inner2 {
+  align-self: center;
+  flex-basis: 40%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero .inner2 h1 {
+  font-size: 4.8vw;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+.hero .inner2 h2 {
+  font-size: 2.2vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    padding: 8rem 1rem 2rem 1rem;
+    /*height: auto;*/
+  }
+  .inner1 {
+    flex-basis: 50%;
+  }
+  .hero .inner2 {
+    flex-basis: 50%;
+  }
+  .hero .inner2 h1 {
+    font-size: 6.8vw;
+  }
+  .hero .inner2 h2 {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero {
+    padding: 2rem 1rem 2rem 1rem;
+    flex-wrap: wrap;
+  }
+  .hero .inner1 {
+    flex-basis: 100%;
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hero .inner2 {
+    flex-basis: 100%;
+    align-self: baseline;
+    padding-top: 0;
+    margin-top: -60px;
+  }
+  .hero .inner2 h1 {
+    font-size: 13vw;
+  }
+  .hero .inner2 h2 {
+    font-size: 6.2vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero {
+    padding: 0rem 1rem 0rem 1rem;
+  }
+}

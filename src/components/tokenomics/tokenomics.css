@@ -1,0 +1,87 @@
+.tokenomics {
+  width: 100%;
+  min-height: 100vh;
+  padding: 8rem 6.4rem;
+  display: flex;
+  background: transparent;
+  background-image: url("assets/bg-home-01.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.tokenomics .inner1 {
+  align-self: center;
+  flex-basis: 40%;
+  padding: 2rem;
+}
+
+.tokenomics .inner2 {
+  align-self: center;
+  flex-basis: 60%;
+  padding: 2rem;
+  background: #222;
+  border-radius: 1em;
+}
+
+.tokenomics .inner2 h2 {
+  padding-bottom: 40px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tokenomics .inner2 h3 {
+  padding-bottom: 5px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tokenomics .inner2 p {
+  color: #aaa;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tokenomics .inner2 p.supply {
+  color: #45ad00;
+  font-size: 28px;
+}
+
+@media screen and (max-width: 1024px) {
+  .tokenomics {
+    padding: 8rem 1rem 2rem 1rem;
+    height: auto;
+  }
+  .tokenomics .inner2 {
+    margin: 0 0;
+    flex-basis: 60%;
+  }
+  .tokenomics .inner1 {
+    flex-basis: 40%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .tokenomics {
+    padding: 2rem 1rem 2rem 1rem;
+    flex-wrap: wrap;
+  }
+  .tokenomics .inner1 {
+    flex-basis: 100%;
+    order: 2;
+  }
+  .tokenomics .inner2 {
+    flex-basis: 100%;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .tokenomics {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+}
