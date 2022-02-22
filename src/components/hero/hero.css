@@ -23,18 +23,16 @@
 }
 
 .hero .inner1 {
-  align-self: center;
-  flex-basis: 60%;
+  align-self: center !important;
+  width: 60% !important;
   padding: 1rem;
-  text-align: center;
+  left: 0 !important;
+  padding: 1rem;
+  position: absolute;
 }
 
 .hero .inner1.shadow {
-  position: absolute;
-  flex-basis: 60%;
-  padding: 1rem;
   z-index: 1;
-  text-align: center;
 }
 
 .hero .inner1.shadow img {
@@ -42,23 +40,9 @@
   margin: 0 auto;
 }
 
-.hero .inner1.fire {
-  position: absolute;
-  flex-basis: 60%;
-  padding: 1rem;
-  text-align: center;
-}
-
 .hero .inner1.fire img {
   width: 85%;
   margin: 0 auto;
-}
-
-.hero .inner1.ice {
-  position: absolute;
-  flex-basis: 60%;
-  padding: 1rem;
-  text-align: center;
 }
 
 .hero .inner1.ice img {
@@ -89,14 +73,25 @@
 
 @media screen and (max-width: 1024px) {
   .hero {
-    padding: 8rem 1rem 2rem 1rem;
-    /*height: auto;*/
+    padding: 6rem 1rem 2rem 1rem;
+    flex-wrap: wrap;
   }
-  .inner1 {
-    flex-basis: 50%;
+  .hero .inner0 {
+    flex-basis: 100%;
+  }
+  .hero .inner1 {
+    width: 100% !important;
+    top: 6rem !important;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+  .hero .inner1 img {
+    width: 60% !important;
   }
   .hero .inner2 {
-    flex-basis: 50%;
+    flex-basis: 100%;
+    align-self: flex-end;
+    padding-bottom: 4rem !important;
   }
   .hero .inner2 h1 {
     font-size: 6.8vw;
@@ -107,21 +102,8 @@
 }
 
 @media screen and (max-width: 700px) {
-  .hero {
-    padding: 2rem 1rem 2rem 1rem;
-    flex-wrap: wrap;
-  }
-  .hero .inner1 {
-    flex-basis: 100%;
-    padding-bottom: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .hero .inner2 {
-    flex-basis: 100%;
-    align-self: baseline;
-    padding-top: 0;
-    margin-top: -60px;
+  .hero .inner1 img {
+    width: 80% !important;
   }
   .hero .inner2 h1 {
     font-size: 13vw;
@@ -132,7 +114,7 @@
 }
 
 @media screen and (max-width: 550px) {
-  .hero {
-    padding: 0rem 1rem 0rem 1rem;
+  .hero .inner1 img {
+    width: 100% !important;
   }
 }
