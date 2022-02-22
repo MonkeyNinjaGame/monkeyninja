@@ -201,7 +201,7 @@ const App = ({ isServerInfo }) => {
 };
 
 export const Logo = () => (
-  <div style={{ display: "flex" }}>
+  <div style={{ display: "flex", maxWidth: "240px" }}>
     <img
       src={MNLogo}
       alt="Monkey Ninja"
