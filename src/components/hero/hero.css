@@ -19,6 +19,21 @@
   padding: 1rem;
 }
 
+.hero .inner1.shadow {
+}
+
+.hero .inner1.ice {
+  position: relative;
+  margin-left: -1000px;
+  margin-top: -600px;
+}
+
+.hero .inner1.fire {
+  position: relative;
+  margin-left: -200px;
+  margin-top: -600px;
+}
+
 .hero .inner2 {
   align-self: center;
   flex-basis: 40%;

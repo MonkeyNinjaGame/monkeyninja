@@ -1,15 +1,24 @@
 import React from "react";
-import header_pic from "../../assets/ninja-trio.png";
+//import header_pic from "../../assets/ninja-trio.png";
 import star from "../../assets/star.png";
 import "./hero.css";
 import { NavLink } from "react-router-dom";
 import { MouseParallaxContainer, MouseParallaxChild, } from "react-parallax-mouse";
+import shadow from "../../assets/black01.png";
+import ice from "../../assets/blue01.png";
+import fire from "../../assets/red01.png";
 
 const Hero = () => {
   return (
-    <MouseParallaxContainer factorX={0.02} factorY={0.04} className="hero">
-      <MouseParallaxChild factorX={0.03} factorY={0.05} className="inner1">
-        <img src={header_pic} className="ninja-fade" alt="Monkey Ninja" />
+    <MouseParallaxContainer className="hero">
+      <MouseParallaxChild factorX={0.03} factorY={0.05} className="inner1 shadow">
+        <img src={shadow} className="ninja-fade" alt="Monkey Ninja" />
+      </MouseParallaxChild>
+      <MouseParallaxChild factorX={0.05} factorY={0.07} className="inner1 ice">
+        <img src={ice} className="ninja-fade" alt="Monkey Ninja" />
+      </MouseParallaxChild>
+      <MouseParallaxChild factorX={0.05} factorY={0.07} className="inner1 fire">
+        <img src={fire} className="ninja-fade" alt="Monkey Ninja" />
       </MouseParallaxChild>
       <div className="inner2">
         <h1>Hi, Ninjas!</h1>
