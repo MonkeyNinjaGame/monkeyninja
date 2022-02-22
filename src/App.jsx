@@ -70,8 +70,8 @@ const styles = {
   logoLeft: {
     height: "auto",
     marginTop: "0px",
-    maxWidth: "240px",
-    minWidth: "140px",
+    //maxWidth: "240px",
+    //minWidth: "140px",
     cursor: "pointer",
   },
   footerLink: {
