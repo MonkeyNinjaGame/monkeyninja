@@ -28,7 +28,9 @@
   color: #f4db73 !important;
 }
 
-.ant-menu-item.tokenPrice {
+.ant-menu-item.tokenPrice,
+.ant-menu-item.tokenPrice:hover,
+.ant-menu-item.tokenPrice:active {
   color: #fff;
   background: #222;
   margin-top: 10px !important;
