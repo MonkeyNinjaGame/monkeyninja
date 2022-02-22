@@ -3,7 +3,9 @@
   min-height: 100vh;
   padding: 8rem 6.4rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   background: transparent;
   background-image: url("assets/bg-home-01.png");
   background-position: center;
@@ -13,32 +15,62 @@
   overflow-y: hidden;
 }
 
+.hero .inner0 {
+  align-self: center;
+  flex-basis: 60%;
+  padding: 1rem;
+  text-align: center;
+}
+
 .hero .inner1 {
   align-self: center;
   flex-basis: 60%;
   padding: 1rem;
+  text-align: center;
 }
 
 .hero .inner1.shadow {
+  position: absolute;
+  flex-basis: 60%;
+  padding: 1rem;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero .inner1.shadow img {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .hero .inner1.ice {
-  position: relative;
-  margin-left: -1000px;
-  margin-top: -600px;
+  position: absolute;
+  flex-basis: 60%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero .inner1.ice img {
+  width: 75%;
+  margin: 0 auto;
 }
 
 .hero .inner1.fire {
-  position: relative;
-  margin-left: -200px;
-  margin-top: -600px;
+  position: absolute;
+  flex-basis: 60%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero .inner1.fire img {
+  width: 85%;
+  margin: 0 auto;
 }
 
 .hero .inner2 {
-  align-self: center;
   flex-basis: 40%;
   text-align: center;
   padding: 1rem;
+  z-index: 2;
 }
 
 .hero .inner2 h1 {
