@@ -42,18 +42,6 @@
   margin: 0 auto;
 }
 
-.hero .inner1.ice {
-  position: absolute;
-  flex-basis: 60%;
-  padding: 1rem;
-  text-align: center;
-}
-
-.hero .inner1.ice img {
-  width: 75%;
-  margin: 0 auto;
-}
-
 .hero .inner1.fire {
   position: absolute;
   flex-basis: 60%;
@@ -63,6 +51,18 @@
 
 .hero .inner1.fire img {
   width: 85%;
+  margin: 0 auto;
+}
+
+.hero .inner1.ice {
+  position: absolute;
+  flex-basis: 60%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero .inner1.ice img {
+  width: 75%;
   margin: 0 auto;
 }
 

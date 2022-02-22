@@ -17,11 +17,11 @@ const Hero = () => {
       <MouseParallaxChild factorX={0.03} factorY={0.05} className="inner1 shadow">
         <img src={shadow} className="ninja-fade" alt="Monkey Ninja" />
       </MouseParallaxChild>
-      <MouseParallaxChild factorX={0.05} factorY={0.07} className="inner1 ice">
-        <img src={ice} className="ninja-fade" alt="Monkey Ninja" />
-      </MouseParallaxChild>
-      <MouseParallaxChild factorX={0.07} factorY={0.09} className="inner1 fire">
+      <MouseParallaxChild factorX={0.05} factorY={0.07} className="inner1 fire">
         <img src={fire} className="ninja-fade" alt="Monkey Ninja" />
+      </MouseParallaxChild>
+      <MouseParallaxChild factorX={0.07} factorY={0.09} className="inner1 ice">
+        <img src={ice} className="ninja-fade" alt="Monkey Ninja" />
       </MouseParallaxChild>
 
       {/*SPACER*/}
