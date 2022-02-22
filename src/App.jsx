@@ -1,10 +1,6 @@
 import { useEffect } from "react";
 import { useMoralis } from "react-moralis";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route /*, Redirect,*/,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route /*, Redirect,*/, } from "react-router-dom";
 import { Layout /*, Tabs*/ } from "antd";
 import "antd/dist/antd.css";
 import "./style.css";
@@ -14,7 +10,7 @@ import MNLogo from "assets/logo.png";
 import MenuItems from "./components/MenuItems";
 import DownloadWP from "components/DownloadWP";
 import Account from "components/Account/Account";
-import TokenPrice from "components/TokenPrice";
+//import TokenPrice from "components/TokenPrice";
 import ERC20Balance from "components/ERC20Balance";
 import ERC20Transfers from "components/ERC20Transfers";
 import DEX from "components/DEX";
@@ -65,7 +61,7 @@ const styles = {
     fontSize: "15px",
     fontWeight: "600",
     textTransform: "uppercase",
-    margin: "0 -10px 0 20px",
+    margin: "0 -10px 0 0",
   },
   logoLeft: {
     height: "auto",
@@ -117,12 +113,12 @@ const App = ({ isServerInfo }) => {
             <MenuItems />
             <div style={styles.headerRight}>
               {/*<Chains />*/}
-              <TokenPrice
+              {/*<TokenPrice
                 address="0xe7541aa266fa18edc1b4cfd766b814ec25d9c937"
                 chain="polygon"
                 image="https://monkeyninja.io/static/media/6-2.bdd53fa3.png"
                 size="25px"
-              />
+              />*/}
               {/*<NativeBalance />*/}
               <Account />
             </div>

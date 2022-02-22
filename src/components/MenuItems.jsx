@@ -1,18 +1,18 @@
 import { useLocation } from "react-router";
 import { Menu } from "antd";
 import { NavLink } from "react-router-dom";
-import {
-  MenuOutlined,
-  HomeFilled,
-  SlidersFilled,
-  CompassFilled,
-  CalculatorFilled /* ShopFilled,*/,
-} from "@ant-design/icons";
+import { MenuOutlined, HomeFilled, SlidersFilled, CompassFilled, CalculatorFilled /* ShopFilled,*/, } from "@ant-design/icons";
+import TokenPrice from "components/TokenPrice";
 
 const styles = {
   menuItem: {
     color: "#fff",
     background: "#222",
+  },
+  tokenPrice: {
+    color: "#fff",
+    background: "#222",
+    marginTop: "10px",
   },
 };
 
@@ -78,6 +78,14 @@ function MenuItems() {
           <NavLink to="/1inch" style={styles.menuItem}>
             Dex
           </NavLink>
+        </Menu.Item>
+        <Menu.Item style={styles.tokenPrice}>
+          <TokenPrice
+            address="0xe7541aa266fa18edc1b4cfd766b814ec25d9c937"
+            chain="polygon"
+            image="https://monkeyninja.io/static/media/6-2.bdd53fa3.png"
+            size="25px"
+          />
         </Menu.Item>
         {/*<Menu.Item key="/nftMarket" style={styles.menuItem} icon={<ShopFilled style={{ color: "#fff" }} />}>
           <NavLink to="/nftMarket" style={styles.menuItem}>
