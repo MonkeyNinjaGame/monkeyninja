@@ -32,7 +32,7 @@
 .ant-menu-item.tokenPrice:hover,
 .ant-menu-item.tokenPrice:active {
   color: #fff;
-  background: #222;
+  background: #222 !important;
   margin-top: 10px !important;
 }
 
@@ -285,7 +285,7 @@ button:hover {
 
 @media screen and (max-width: 1024px) {
   .ant-menu-item.tokenPrice {
-    left: 140px;
+    left: 140px !important;
   }
 }
 
