@@ -47,7 +47,7 @@ const styles = {
   },
   header: {
     position: "fixed",
-    zIndex: 1,
+    zIndex: 3,
     width: "100%",
     background: "#222",
     display: "flex",
