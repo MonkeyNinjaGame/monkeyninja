@@ -28,6 +28,12 @@
   color: #f4db73 !important;
 }
 
+.ant-menu-item.tokenPrice {
+  color: #fff;
+  background: #222;
+  margin-top: 10px !important;
+}
+
 .ant-menu-vertical > .ant-menu-item {
   height: 40px;
   line-height: 40px;
@@ -273,6 +279,12 @@ button:hover {
   width: 100%;
   text-align: center;
   color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .ant-menu-item.tokenPrice {
+    left: 140px;
+  }
 }
 
 @media screen and (max-width: 700px) {

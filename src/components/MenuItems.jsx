@@ -9,11 +9,6 @@ const styles = {
     color: "#fff",
     background: "#222",
   },
-  tokenPrice: {
-    color: "#fff",
-    background: "#222",
-    marginTop: "10px",
-  },
 };
 
 function MenuItems() {
@@ -79,7 +74,7 @@ function MenuItems() {
             Dex
           </NavLink>
         </Menu.Item>
-        <Menu.Item style={styles.tokenPrice}>
+        <Menu.Item className="tokenPrice">
           <TokenPrice
             address="0xe7541aa266fa18edc1b4cfd766b814ec25d9c937"
             chain="polygon"
