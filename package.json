@@ -1,6 +1,6 @@
 {
   "name": "monkeyninja",
-  "homepage": "https://monkeyninjagame.github.io/monkeyninja",
+  "homepage": "https://monkeyninja.io",
   "version": "0.1.0",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
