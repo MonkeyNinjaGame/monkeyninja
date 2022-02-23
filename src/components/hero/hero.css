@@ -73,11 +73,13 @@
 
 @media screen and (max-width: 1024px) {
   .hero {
-    padding: 6rem 1rem 2rem 1rem;
+    padding: 6rem 1rem 4rem 1rem;
     flex-wrap: wrap;
+    flex-direction: column;
   }
   .hero .inner0 {
-    flex-basis: 100%;
+    flex-basis: 50%;
+    width: 100%;
   }
   .hero .inner1 {
     width: 100% !important;
@@ -95,8 +97,9 @@
     width: 40% !important;
   }
   .hero .inner2 {
-    flex-basis: 100%;
-    align-self: flex-end;
+    flex-basis: 50%;
+    width: 100%;
+    align-self: center;
     padding-bottom: 4rem !important;
   }
   .hero .inner2 h1 {
