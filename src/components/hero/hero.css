@@ -17,7 +17,7 @@
 
 .hero .inner0 {
   align-self: center;
-  flex-basis: 60%;
+  flex-basis: 50%;
   padding: 1rem;
   text-align: center;
 }
@@ -51,7 +51,7 @@
 }
 
 .hero .inner2 {
-  flex-basis: 40%;
+  flex-basis: 50%;
   text-align: center;
   padding: 1rem;
   z-index: 2;
@@ -73,7 +73,7 @@
 
 @media screen and (max-width: 1024px) {
   .hero {
-    padding: 6rem 1rem 4rem 1rem;
+    padding: 6rem 1rem 2rem 1rem;
     flex-wrap: wrap;
     flex-direction: column;
   }
@@ -99,8 +99,8 @@
   .hero .inner2 {
     flex-basis: 50%;
     width: 100%;
-    align-self: center;
-    padding-bottom: 4rem !important;
+    align-self: flex-end;
+    align-items: flex-end;
   }
   .hero .inner2 h1 {
     font-size: 6.8vw;
@@ -111,6 +111,10 @@
 }
 
 @media screen and (max-width: 700px) {
+  .hero {
+    padding: 6rem 1rem 6rem 1rem;
+    min-height: calc(100vh - 40px) !important;
+  }
   .hero .inner1.shadow img {
     width: 80% !important;
   }
@@ -119,6 +123,9 @@
   }
   .hero .inner1.ice img {
     width: 60% !important;
+  }
+  .hero .inner2 {
+    align-items: flex-start;
   }
   .hero .inner2 h1 {
     font-size: 13vw;
