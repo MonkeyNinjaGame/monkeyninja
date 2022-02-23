@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/monkeyninja/static/css/main.8fd2238b.chunk.css",
-    "main.js": "/monkeyninja/static/js/main.75f28f5a.chunk.js",
-    "main.js.map": "/monkeyninja/static/js/main.75f28f5a.chunk.js.map",
+    "main.css": "/monkeyninja/static/css/main.8f52ef16.chunk.css",
+    "main.js": "/monkeyninja/static/js/main.7b1d82db.chunk.js",
+    "main.js.map": "/monkeyninja/static/js/main.7b1d82db.chunk.js.map",
     "runtime-main.js": "/monkeyninja/static/js/runtime-main.0471ed0c.js",
     "runtime-main.js.map": "/monkeyninja/static/js/runtime-main.0471ed0c.js.map",
     "static/css/2.04c588a3.chunk.css": "/monkeyninja/static/css/2.04c588a3.chunk.css",
@@ -12,7 +12,7 @@
     "service-worker.js": "/monkeyninja/service-worker.js",
     "service-worker.js.map": "/monkeyninja/service-worker.js.map",
     "static/css/2.04c588a3.chunk.css.map": "/monkeyninja/static/css/2.04c588a3.chunk.css.map",
-    "static/css/main.8fd2238b.chunk.css.map": "/monkeyninja/static/css/main.8fd2238b.chunk.css.map",
+    "static/css/main.8f52ef16.chunk.css.map": "/monkeyninja/static/css/main.8f52ef16.chunk.css.map",
     "static/js/2.98a7c407.chunk.js.LICENSE.txt": "/monkeyninja/static/js/2.98a7c407.chunk.js.LICENSE.txt",
     "static/media/4-2.f5ae07d2.png": "/monkeyninja/static/media/4-2.f5ae07d2.png",
     "static/media/5-2.85543665.png": "/monkeyninja/static/media/5-2.85543665.png",
@@ -56,7 +56,7 @@
     "static/js/runtime-main.0471ed0c.js",
     "static/css/2.04c588a3.chunk.css",
     "static/js/2.98a7c407.chunk.js",
-    "static/css/main.8fd2238b.chunk.css",
-    "static/js/main.75f28f5a.chunk.js"
+    "static/css/main.8f52ef16.chunk.css",
+    "static/js/main.7b1d82db.chunk.js"
   ]
 }
