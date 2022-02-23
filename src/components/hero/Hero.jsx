@@ -1,4 +1,5 @@
 import React from "react";
+import { Modal/*, Button*/ } from 'antd';
 import star from "../../assets/star.png";
 import "./hero.css";
 import { NavLink } from "react-router-dom";
@@ -8,6 +9,29 @@ import ice from "../../assets/hero-blue01.png";
 import fire from "../../assets/hero-red01.png";
 
 const Hero = () => {
+
+  const [visible, setVisible] = React.useState(false);
+  const [confirmLoading, setConfirmLoading] = React.useState(false);
+  const [modalText, setModalText] = React.useState('Register Now For Early Access!');
+
+  const showModal = () => {
+    setVisible(true);
+  };
+
+  const handleOk = () => {
+    setModalText('Thank you for regirtering');
+    setConfirmLoading(true);
+    setTimeout(() => {
+      setVisible(false);
+      setConfirmLoading(false);
+    }, 2000);
+  };
+
+  const handleCancel = () => {
+    console.log('Clicked cancel button');
+    setVisible(false);
+  };
+
   return (
     
     <MouseParallaxContainer className="hero">
@@ -37,7 +61,20 @@ const Hero = () => {
         </h4>
         <NavLink to="/1inch">
           <button>Get Your Coins Now</button>
-        </NavLink>
+        </NavLink><br />
+        <div style={{ height: "40px" }}></div>
+        <button onClick={showModal}>
+          Register To Play
+        </button>
+        <Modal
+          title="Title"
+          visible={visible}
+          onOk={handleOk}
+          confirmLoading={confirmLoading}
+          onCancel={handleCancel}
+        >
+          <p>{modalText}</p>
+        </Modal>
       </div>
 
       {/*SHURIKEN*/}
