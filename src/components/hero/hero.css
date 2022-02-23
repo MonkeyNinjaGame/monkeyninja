@@ -126,6 +126,7 @@
   }
   .hero .inner2 {
     align-items: flex-start;
+    vertical-align: top !important;
   }
   .hero .inner2 h1 {
     font-size: 13vw;
