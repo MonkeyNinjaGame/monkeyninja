@@ -1,6 +1,6 @@
 import React from "react";
 // import Text from "antd/lib/typography/Text";
-import "../roadmap/roadmap.css";
+import "../Roadmap/roadmap.css";
 import Background from "assets/bg-dex-01.png";
 import Step1 from "../../assets/step1.png";
 import Step2 from "../../assets/step2.png";

@@ -24,7 +24,7 @@ import Ramper from "components/Ramper";
 import { Hero, About, Utility, Dynasty, Tokenomics, CTA } from "components";
 import ScrollToTop from "./components/ScrollToTop";
 import SocialSidebar from "./components/SocialSidebar";
-import Roadmap from "components/roadmap/Roadmap";
+import Roadmap from "components/Roadmap/Roadmap";
 import Dojo from "components/dojo/Dojo";
 
 const { Header, Footer } = Layout;

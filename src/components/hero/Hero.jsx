@@ -1,5 +1,5 @@
-import React from "react";
-import { Modal/*, Button*/ } from 'antd';
+import React, { useState } from 'react';
+import { Modal, Button, Input } from 'antd';
 import star from "../../assets/star.png";
 import "./hero.css";
 import { NavLink } from "react-router-dom";
@@ -10,26 +10,18 @@ import fire from "../../assets/hero-red01.png";
 
 const Hero = () => {
 
-  const [visible, setVisible] = React.useState(false);
-  const [confirmLoading, setConfirmLoading] = React.useState(false);
-  const [modalText, setModalText] = React.useState('Register Now For Early Access!');
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   const showModal = () => {
-    setVisible(true);
+    setIsModalVisible(true);
   };
 
   const handleOk = () => {
-    setModalText('Thank you for regirtering');
-    setConfirmLoading(true);
-    setTimeout(() => {
-      setVisible(false);
-      setConfirmLoading(false);
-    }, 2000);
+    setIsModalVisible(false);
   };
 
   const handleCancel = () => {
-    console.log('Clicked cancel button');
-    setVisible(false);
+    setIsModalVisible(false);
   };
 
   return (
@@ -60,20 +52,23 @@ const Hero = () => {
           on Quickswap!
         </h4>
         <NavLink to="/1inch">
-          <button>Get Your Coins Now</button>
+          <Button type="primary">
+            Get Your Coins Now
+          </Button>
         </NavLink><br />
+
+        {/*REGISTRATION*/}
         <div style={{ height: "40px" }}></div>
-        <button onClick={showModal}>
+        <Button type="primary" onClick={showModal}>
           Register To Play
-        </button>
-        <Modal
-          title="Title"
-          visible={visible}
-          onOk={handleOk}
-          confirmLoading={confirmLoading}
-          onCancel={handleCancel}
-        >
-          <p>{modalText}</p>
+        </Button>
+        <Modal centered title="Register For Early Access" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+          <Input type="email" name="" id="email" placeholder="Email"></Input>
+          <Input type="password" name="" id="password" placeholder="Password"></Input>
+          <Button type="primary" id="signup">
+            Register
+          </Button>
+          <script src='reg.js'></script>
         </Modal>
       </div>
 

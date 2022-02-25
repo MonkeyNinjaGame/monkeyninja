@@ -1,6 +1,6 @@
-export { default as Hero } from "./hero/Hero";
-export { default as About } from "./about/About";
-export { default as Utility } from "./utility/Utility";
-export { default as Dynasty } from "./dynasty/Dynasty";
-export { default as Tokenomics } from "./tokenomics/Tokenomics";
-export { default as CTA } from "./cta/CTA";
+export { default as Hero } from "./Hero/Hero";
+export { default as About } from "./About/About";
+export { default as Utility } from "./Utility/Utility";
+export { default as Dynasty } from "./Dynasty/Dynasty";
+export { default as Tokenomics } from "./Tokenomics/Tokenomics";
+export { default as CTA } from "./CTA/CTA";
