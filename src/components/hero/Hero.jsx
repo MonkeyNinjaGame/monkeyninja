@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, Button, Input } from 'antd';
+import { Modal, Button/*, Input*/ } from 'antd';
 import star from "../../assets/star.png";
 import "./hero.css";
 import { NavLink } from "react-router-dom";
@@ -30,13 +30,13 @@ const Hero = () => {
 
       {/*NINJA TRIO*/}
       <MouseParallaxChild factorX={0.03} factorY={0.05} className="inner1 shadow">
-        <img src={shadow} className="ninja-fade" alt="Monkey Ninja" />
+        <img src={shadow} className="ninja-fade" alt="Shadow Monkey" />
       </MouseParallaxChild>
       <MouseParallaxChild factorX={0.05} factorY={0.07} className="inner1 fire">
-        <img src={fire} className="ninja-fade" alt="Monkey Ninja" />
+        <img src={fire} className="ninja-fade" alt="Fire Monkey" />
       </MouseParallaxChild>
       <MouseParallaxChild factorX={0.07} factorY={0.09} className="inner1 ice">
-        <img src={ice} className="ninja-fade" alt="Monkey Ninja" />
+        <img src={ice} className="ninja-fade" alt="Ice Monkey" />
       </MouseParallaxChild>
 
       {/*SPACER*/}
@@ -62,12 +62,15 @@ const Hero = () => {
         <Button type="primary" onClick={showModal}>
           Register To Play
         </Button>
-        <Modal centered title="Register For Early Access" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-          <Input type="email" name="" id="email" placeholder="Email"></Input>
-          <Input type="password" name="" id="password" placeholder="Password"></Input>
-          <Button type="primary" id="signup">
+        <Modal centered footer={null} title="Register For Early Access" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+          <input type="email" name="" id="email" placeholder="Email"></input>
+          <input type="password" name="" id="password" placeholder="Password"></input>
+          <button type="primary" id="signup">
             Register
-          </Button>
+          </button>
+          <button type="primary" id="login">
+            Login
+          </button>
           <script src='reg.js'></script>
         </Modal>
       </div>

@@ -65,9 +65,9 @@
 }
 
 .hero .inner2 h2 {
-  font-size: 2.2vw;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-size: 3.2vw;
+  font-weight: normal;
+  /*text-transform: uppercase;*/
   color: #ccc;
 }
 

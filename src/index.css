@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Contrail+One&family=Grechen+Fuemen&family=Kaushan+Script&family=Pompiere&family=Sriracha&family=Tillana&family=Yatra+One&display=swap");
 
 /* COLORS */
 /* Red: #b80000 */
@@ -8,6 +10,10 @@
 /* Dark Border: #111111 */
 /* White: #ffffff */
 /* Grey Text: #cccccc */
+
+iframe {
+  z-index: -99999999999999 !important;
+}
 
 *,
 *::before,
@@ -101,10 +107,14 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 60px;
   color: #222222;
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Grechen Fuemen", cursive;
   padding: 10px 0;
+  /*text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;*/
+  font-weight: normal !important;
+  /*text-transform: uppercase;*/
+  /*letter-spacing: 2px !important;*/
 }
 
 h3 {
