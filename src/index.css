@@ -11,6 +11,10 @@
 /* White: #ffffff */
 /* Grey Text: #cccccc */
 
+body {
+  width: 100% !important;
+}
+
 iframe {
   z-index: -99999999999999 !important;
 }

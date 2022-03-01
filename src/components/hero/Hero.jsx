@@ -7,6 +7,7 @@ import { MouseParallaxContainer, MouseParallaxChild, } from "react-parallax-mous
 import shadow from "../../assets/hero-black01.png";
 import ice from "../../assets/hero-blue01.png";
 import fire from "../../assets/hero-red01.png";
+import Signup from "./Signup";
 
 const Hero = () => {
 
@@ -57,21 +58,14 @@ const Hero = () => {
           </Button>
         </NavLink><br />
 
-        {/*REGISTRATION*/}
+        {/*SIGNUP*/}
         <div style={{ height: "40px" }}></div>
         <Button type="primary" onClick={showModal}>
           Register To Play
         </Button>
-        <Modal centered footer={null} title="Register For Early Access" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-          <input type="email" name="" id="email" placeholder="Email"></input>
-          <input type="password" name="" id="password" placeholder="Password"></input>
-          <button type="primary" id="signup">
-            Register
-          </button>
-          <button type="primary" id="login">
-            Login
-          </button>
-          <script src='reg.js'></script>
+        <Modal centered footer={null} visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+          <h2 style={{ fontSize: "2.4rem", color: "#fff", textAlign: "center" }}>Sign Up For Early Access</h2>
+          <Signup />
         </Modal>
       </div>
 

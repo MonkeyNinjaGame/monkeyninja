@@ -257,7 +257,7 @@ a {
   touch-action: manipulation;
   height: auto;
   padding: 10px 20px;
-  margin: 5px 0;
+  margin: 5px 0 !important;
   font-size: 20px;
   border-radius: 0px;
   color: #000000d9;
@@ -289,7 +289,7 @@ button:hover,
 
 .ant-input {
   box-sizing: border-box;
-  margin: 5px 0;
+  margin: 5px 0 !important;
   font-variant: tabular-nums;
   list-style: none;
   font-feature-settings: "tnum", "tnum";
@@ -306,6 +306,11 @@ button:hover,
   border: 1px solid #cccccc;
   border-radius: 0;
   transition: all 0.3s;
+}
+
+.ant-input-affix-wrapper {
+  margin: 5px 0 5px 0;
+  border-radius: 0;
 }
 
 .dexInput::placeholder,
