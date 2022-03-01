@@ -1,6 +1,10 @@
 import { useEffect } from "react";
 import { useMoralis } from "react-moralis";
-import { BrowserRouter as Router, Switch, Route /*, Redirect,*/, } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route /*, Redirect,*/,
+} from "react-router-dom";
 import { Layout /*, Tabs*/ } from "antd";
 import "antd/dist/antd.css";
 import "./style.css";
