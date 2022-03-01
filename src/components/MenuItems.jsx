@@ -1,7 +1,13 @@
 import { useLocation } from "react-router";
 import { Menu } from "antd";
 import { NavLink } from "react-router-dom";
-import { MenuOutlined, HomeFilled, SlidersFilled, CompassFilled, CalculatorFilled /* ShopFilled,*/, } from "@ant-design/icons";
+import {
+  MenuOutlined,
+  HomeFilled,
+  SlidersFilled,
+  CompassFilled,
+  CalculatorFilled /* ShopFilled,*/,
+} from "@ant-design/icons";
 import TokenPrice from "components/TokenPrice";
 
 const styles = {
