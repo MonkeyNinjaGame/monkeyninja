@@ -1,0 +1,20 @@
+{
+    "name": "Monkey Ninja",
+    "short_name": "Monkey Ninja",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png?v=02",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-384x384.png?v=02",
+            "sizes": "384x384",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#b80000",
+    "background_color": "#b80000",
+    "start_url": "https://monkeyninja.io",
+    "display": "standalone"
+}
