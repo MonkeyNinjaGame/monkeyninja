@@ -7,7 +7,7 @@
 /* Charcoal: #222222 */
 /* Dark Border: #111111 */
 /* White: #ffffff */
-/* Grey Text: #cccccc */
+/* Grey Text: #c0c0c0 */
 
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after,
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after,
@@ -22,6 +22,7 @@
 
 .ant-menu-item {
   text-transform: uppercase;
+  padding: 0 15px !important;
 }
 
 .ant-menu-item a:hover {
@@ -32,8 +33,9 @@
 .ant-menu-item.tokenPrice:hover,
 .ant-menu-item.tokenPrice:active {
   color: #fff;
-  background: #222 !important;
+  background: transparent !important;
   margin-top: 10px !important;
+  padding: 0;
 }
 
 .ant-menu-vertical > .ant-menu-item {
@@ -159,7 +161,9 @@
 }
 
 .ant-menu-item .anticon svg {
-  margin: 0 0 -5px !important;
+  margin: 0 0 -2px !important;
+  width: 16px;
+  height: 16px;
 }
 
 .anticon-close svg {
@@ -351,7 +355,7 @@ button:hover,
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .footerMain {
     padding-bottom: 45px;
   }

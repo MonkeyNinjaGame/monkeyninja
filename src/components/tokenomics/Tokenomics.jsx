@@ -1,8 +1,11 @@
 import React from "react";
+import { Typography } from "antd";
 import tokenomics_pic from "../../assets/6-2.png";
 import "./tokenomics.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/opacity.css";
+
+const { Paragraph } = Typography;
 
 const TokenomicsImage = () => (
   <LazyLoadImage
@@ -35,7 +38,7 @@ const Tokenomics = () => {
             <u>Contract Address</u>
           </b>
           <br />
-          0xe7541aa266fa18edc1b4cfd766b814ec25d9c937
+          <Paragraph style={{ color: "#f4db73", fontSize: "16px" }} copyable> 0xe7541aa266fa18edc1b4cfd766b814ec25d9c937</Paragraph>
         </h4>
         <p style={{ marginTop: "10px" }}>
           What is the Okane Coin? It's the currency used by all of the Monkey

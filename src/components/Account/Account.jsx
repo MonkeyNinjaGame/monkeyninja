@@ -11,32 +11,30 @@ import { connectors } from "./config";
 
 const styles = {
   account: {
-    height: "42px",
-    padding: "0",
-    marginLeft: "20px",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "fit-content",
     borderRadius: "0",
-    backgroundColor: "#222",
+    backgroundColor: "transparent",
     cursor: "pointer",
   },
   text: {
     color: "#fff",
-    background: "#ffb148",
+    background: "#b80000",
     cursor: "pointer",
-    padding: "20px 20px",
-    marginRight: "0px",
+    padding: "10px",
+    marginRight: "10px",
+    marginLeft: "20px",
+    whiteSpace: "nowrap",
+    fontSize: "16px",
   },
   unauth: {
     color: "#fff",
-    background: "#444",
+    background: "#b80000",
     cursor: "pointer",
-    padding: "20px 20px",
-    marginRight: "0px",
-    marginLeft: "20px",
+    padding: "8px",
+    marginRight: "0",
+    marginLeft: "0",
     whiteSpace: "nowrap",
+    fontSize: "0.8rem",
+    fontFamily: "Manrope",
   },
   connector: {
     alignItems: "center",
@@ -168,7 +166,7 @@ function Account() {
           bodyStyle={{ padding: "15px" }}
         >
           <Address
-            avatar="left"
+            avatar="none"
             size={6}
             copyable
             style={{ fontSize: "20px", color: "#fff" }}

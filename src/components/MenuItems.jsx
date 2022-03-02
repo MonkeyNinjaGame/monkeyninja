@@ -13,7 +13,8 @@ import TokenPrice from "components/TokenPrice";
 const styles = {
   menuItem: {
     color: "#fff",
-    background: "#222",
+    background: "transparent",
+    fontSize: "12px",
   },
 };
 
@@ -28,11 +29,11 @@ function MenuItems() {
         overflowedIndicator={<MenuOutlined />}
         style={{
           display: "flex",
-          fontSize: "14px",
+          fontSize: "12px",
           fontWeight: "500",
           width: "100%",
           justifyContent: "right",
-          background: "#222",
+          background: "transparent",
           border: "0px",
           textTransform: "uppercase",
         }}

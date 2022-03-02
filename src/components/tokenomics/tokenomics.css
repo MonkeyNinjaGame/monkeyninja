@@ -50,6 +50,12 @@
   font-size: 28px;
 }
 
+.tokenomics .anticon svg {
+  width: 18px !important;
+  height: 18px !important;
+  color: #ffb148;
+}
+
 @media screen and (max-width: 1024px) {
   .tokenomics {
     padding: 8rem 1rem 2rem 1rem;
@@ -65,7 +71,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .tokenomics {
     padding: 2rem 1rem 2rem 1rem;
     flex-wrap: wrap;
@@ -80,7 +86,7 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 480px) {
   .tokenomics {
     padding: 2rem 1rem 2rem 1rem;
   }

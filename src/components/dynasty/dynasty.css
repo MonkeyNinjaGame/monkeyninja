@@ -58,13 +58,13 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .dynasty {
     padding: 2rem 1rem 2rem 1rem;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 480px) {
   .dynasty {
     padding: 2rem 1rem 2rem 1rem;
   }
