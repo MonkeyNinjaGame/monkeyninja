@@ -1,90 +1,94 @@
-.cta {
+.team {
   width: 100%;
   min-height: 100vh;
   padding: 8rem 6.4rem;
   display: flex;
+  flex-direction: column;
   background: #b80000;
 }
 
-.cta .inner1 {
+.team .inner1 {
   align-self: center;
-  flex-basis: 60%;
+  flex-basis: 50%;
+  width: 100%;
   padding: 2rem;
   text-align: center;
-  background: #222;
-  border-radius: 1em;
+  background: transparent;
 }
 
-.cta .inner2 {
+.team .inner2 {
   align-self: center;
-  flex-basis: 40%;
+  flex-basis: 50%;
+  width: 100%;
   padding: 2rem;
+  text-align: center;
+  background: transparent;
 }
 
-.cta .inner1 h2 {
+.team .inner1 h2 {
   padding-bottom: 40px;
   color: #fff;
   font-weight: bold;
   text-align: center;
 }
 
-.cta .inner1 p {
-  color: #aaa;
+.team .inner1 p {
+  color: #c0c0c0;
   font-weight: bold;
   text-align: center;
 }
 
-.cta .inner2 img {
+.team .inner2 img {
   width: 100%;
   display: inline-flex;
 }
 
-.cta .inner1 img.socials {
+.team .inner1 img.socials {
   width: 16.66666666666667%;
   cursor: pointer;
   float: left;
 }
 
-.cta .socials {
+.team .socials {
   padding: 0 20px;
 }
 
 @media screen and (max-width: 1024px) {
-  .cta {
+  .team {
     padding: 8rem 1rem 2rem 1rem;
     height: auto;
   }
-  .cta .inner1 {
+  .team .inner1 {
     margin: 0 0;
     flex-basis: 60%;
   }
-  .cta .inner2 {
+  .team .inner2 {
     flex-basis: 40%;
     margin: 0;
   }
-  .cta .socials {
+  .team .socials {
     padding: 0 15px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .cta {
+  .team {
     padding: 2rem 1rem 2rem 1rem;
     flex-wrap: wrap;
   }
-  .cta .inner1 {
+  .team .inner1 {
     flex-basis: 100%;
   }
-  .cta .inner2 {
+  .team .inner2 {
     flex-basis: 100%;
   }
-  .cta .socials {
+  .team .socials {
     padding: 0 5px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .cta {
+  .team {
     padding: 2rem 1rem 2rem 1rem;
   }
 }

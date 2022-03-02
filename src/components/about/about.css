@@ -10,7 +10,7 @@
   align-self: center;
   flex-basis: 60%;
   padding: 2rem;
-  background: #222;
+  background: transparent;
   border-radius: 1em;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .about .inner1 p {
-  color: #aaa;
+  color: #c0c0c0;
   font-weight: bold;
   text-align: center;
 }

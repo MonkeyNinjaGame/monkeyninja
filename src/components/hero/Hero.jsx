@@ -1,4 +1,4 @@
-import React/*, { useState }*/ from "react";
+import React /*, { useState }*/ from "react";
 import { /*Modal, */ Button, Typography } from "antd";
 //import { getEllipsisTxt } from "helpers/formatters";
 import star from "../../assets/star.png";
@@ -37,13 +37,29 @@ const Hero = () => {
 
       {/*HEADING & CTA*/}
       <div className="inner2">
-        <h1>Monkey <span style={{ color: "#b80000" }}>Ninja</span></h1>
+        <h1>
+          Monkey <span style={{ color: "#b80000" }}>Ninja</span>
+        </h1>
         <h2>Meta Dynasty</h2>
-        <h3>FREE TO PLAY &amp; PLAY TO EARN!<br />Part collectible NFT, part role play,<br />and part arcade gaming!</h3>
+        <h3>
+          <b>FREE TO PLAY &amp; PLAY TO EARN!</b>
+          <br />
+          Part collectible NFT, part role play,
+          <br />
+          and part arcade gaming!
+        </h3>
         <h5>ERC20 Contract Address:</h5>
-        <Paragraph style={{ color: "#f4db73", fontSize: "12px" }} copyable> 0xe7541aa266fa18edc1b4cfd766b814ec25d9c937</Paragraph>
+        <Paragraph style={{ color: "#f4db73", fontSize: "12px" }} copyable>
+          {" "}
+          0xe7541aa266fa18edc1b4cfd766b814ec25d9c937
+        </Paragraph>
         <NavLink to="/1inch">
-          <Button type="primary" style={{ padding: "10px 20px", fontWeight: "bold" }}>Get Okane Coins Now</Button>
+          <Button
+            type="primary"
+            style={{ padding: "10px 20px", fontWeight: "bold" }}
+          >
+            Get Okane Coins Now
+          </Button>
         </NavLink>
         <br />
 

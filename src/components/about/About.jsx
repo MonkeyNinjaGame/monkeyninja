@@ -1,10 +1,10 @@
 import React from "react";
-import about_pic from "../../assets/black-01.png";
+import about_pic from "../../assets/7-2.png";
 import "./about.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-const BlackNinja = () => (
+const WhiteNinja = () => (
   <LazyLoadImage
     alt={"About Monkey Ninja"}
     src={about_pic}
@@ -35,7 +35,7 @@ const About = () => {
         </p>
       </div>
       <div className="inner2">
-        <BlackNinja />
+        <WhiteNinja />
         {/*<img src={about_pic} alt="About Monkey Ninja" />*/}
       </div>
     </div>

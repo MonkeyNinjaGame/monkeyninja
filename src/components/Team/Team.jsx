@@ -1,24 +1,24 @@
 import React from "react";
-import cta_pic from "../../assets/7-2.png";
-import "./cta.css";
+import nate from "../../assets/shadow-head-01.png";
+import "./team.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-const WhiteNinja = () => (
+const Nate = () => (
   <LazyLoadImage
-    alt={"Play Now"}
-    src={cta_pic}
+    alt={"Nate Chisley"}
+    src={nate}
     useIntersectionObserver="true"
     effect="blur"
     delayMethod="throttle"
   />
 );
 
-const CTA = () => {
+const Team = () => {
   return (
-    <div className="cta" id="socials">
+    <div className="team" id="socials">
       <div className="inner1">
-        <h2>Get Connected</h2>
+        <h2>Core Team</h2>
         <p>
           Play as a Monkey Ninja warrior. Go on quests and missions, solo or
           with your clan. Create your own custom avatar, craft tools and
@@ -29,10 +29,10 @@ const CTA = () => {
         <p>Join our communities for all the latest updates!</p>
       </div>
       <div className="inner2">
-        <WhiteNinja />
+        <Nate />
       </div>
     </div>
   );
 };
 
-export default CTA;
+export default Team;

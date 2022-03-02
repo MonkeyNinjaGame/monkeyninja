@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   padding: 8rem 6.4rem;
   display: flex;
   flex-direction: row-reverse;
@@ -69,7 +69,7 @@
   font-size: 4vw;
   font-weight: normal;
   color: #fff;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .hero .inner2 h3 {
@@ -122,14 +122,14 @@
     flex-basis: 50%;
     width: 100%;
     align-items: center;
-    padding: 1rem !important;
+    padding: 1rem;
     top: 6rem;
   }
   .hero .inner2 {
     flex-basis: 50%;
     width: 100%;
     text-align: center;
-    padding: 1rem !important;
+    padding: 1rem 1rem 6rem;
   }
   .hero .inner2 h1 {
     font-size: 13vw;

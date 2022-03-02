@@ -11,7 +11,7 @@
   align-self: center;
   flex-basis: 100%;
   padding: 2rem;
-  background: #222;
+  background: transparent;
   border-radius: 1em;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .dynasty .inner1 p {
-  color: #aaa;
+  color: #c0c0c0;
   font-weight: bold;
   text-align: center;
 }

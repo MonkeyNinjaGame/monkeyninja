@@ -38,7 +38,10 @@ const Tokenomics = () => {
             <u>Contract Address</u>
           </b>
           <br />
-          <Paragraph style={{ color: "#f4db73", fontSize: "16px" }} copyable> 0xe7541aa266fa18edc1b4cfd766b814ec25d9c937</Paragraph>
+          <Paragraph style={{ color: "#f4db73", fontSize: "16px" }} copyable>
+            {" "}
+            0xe7541aa266fa18edc1b4cfd766b814ec25d9c937
+          </Paragraph>
         </h4>
         <p style={{ marginTop: "10px" }}>
           What is the Okane Coin? It's the currency used by all of the Monkey
