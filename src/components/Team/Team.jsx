@@ -41,9 +41,7 @@ const Team = () => {
     <div className="team" id="socials">
       <div className="inner1">
         <h2>Core Team</h2>
-        <p>
-          Our core team are all professionals in their respective fields.
-        </p>
+        <p>Our core team are all professionals in their respective fields.</p>
       </div>
       <div className="inner2">
         <div className="teamwrap">
