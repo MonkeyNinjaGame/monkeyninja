@@ -57,6 +57,15 @@ function MenuItems() {
           </NavLink>
         </Menu.Item>
         <Menu.Item
+          key="/1inch"
+          style={styles.menuItem}
+          icon={<CalculatorFilled style={{ color: "#fff" }} />}
+        >
+          <NavLink to="/1inch" style={styles.menuItem}>
+            Dex
+          </NavLink>
+        </Menu.Item>
+        <Menu.Item
           key=""
           style={styles.menuItem}
           icon={<SlidersFilled style={{ color: "#fff" }} />}
@@ -69,15 +78,6 @@ function MenuItems() {
         >
           <NavLink to="" style={styles.menuItem}>
             Chart
-          </NavLink>
-        </Menu.Item>
-        <Menu.Item
-          key="/1inch"
-          style={styles.menuItem}
-          icon={<CalculatorFilled style={{ color: "#fff" }} />}
-        >
-          <NavLink to="/1inch" style={styles.menuItem}>
-            Dex
           </NavLink>
         </Menu.Item>
         <Menu.Item className="tokenPrice">
