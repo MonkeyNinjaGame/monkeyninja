@@ -25,7 +25,7 @@ import Contract from "components/Contract/Contract";
 //import NativeBalance from "components/NativeBalance";
 import Text from "antd/lib/typography/Text";
 import Ramper from "components/Ramper";
-import { Hero, About, Utility, Dynasty, Tokenomics, CTA } from "components";
+import { Hero, About, Utility, Dynasty, Tokenomics, Team } from "components";
 import ScrollToTop from "./components/ScrollToTop";
 import SocialSidebar from "./components/SocialSidebar";
 import Roadmap from "components/Roadmap/Roadmap";
@@ -143,7 +143,7 @@ const App = ({ isServerInfo }) => {
                   <Utility />
                   <Dynasty />
                   <Tokenomics />
-                  <CTA />
+                  <Team />
                 </div>
               </Route>
               <Route path="/roadmap">

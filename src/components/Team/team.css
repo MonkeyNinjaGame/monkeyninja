@@ -11,16 +11,7 @@
   align-self: center;
   flex-basis: 50%;
   width: 100%;
-  padding: 2rem;
-  text-align: center;
-  background: transparent;
-}
-
-.team .inner2 {
-  align-self: center;
-  flex-basis: 50%;
-  width: 100%;
-  padding: 2rem;
+  padding: 2rem 2rem 0;
   text-align: center;
   background: transparent;
 }
@@ -38,15 +29,29 @@
   text-align: center;
 }
 
-.team .inner2 img {
+.team .inner2 {
+  flex-basis: 50%;
   width: 100%;
-  display: inline-flex;
+  padding: 0 2rem 2rem;
+  text-align: center;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.team .inner1 img.socials {
-  width: 16.66666666666667%;
+.team .inner2 .teamwrap {
+  flex-basis: 33.333%;
+  padding: 1rem;
+}
+
+.team .inner2 .teamwrap img {
   cursor: pointer;
-  float: left;
+  background: #222;
+  border-radius: 25% 0 25% 0;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .team .socials {

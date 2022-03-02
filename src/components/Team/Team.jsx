@@ -1,13 +1,35 @@
 import React from "react";
+import will from "../../assets/fire-head-01.png";
 import nate from "../../assets/shadow-head-01.png";
+import daniel from "../../assets/ice-head-01.png";
 import "./team.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
+const Will = () => (
+  <LazyLoadImage
+    alt={"Will"}
+    src={will}
+    useIntersectionObserver="true"
+    effect="blur"
+    delayMethod="throttle"
+  />
+);
+
 const Nate = () => (
   <LazyLoadImage
-    alt={"Nate Chisley"}
+    alt={"Nate"}
     src={nate}
+    useIntersectionObserver="true"
+    effect="blur"
+    delayMethod="throttle"
+  />
+);
+
+const Daniel = () => (
+  <LazyLoadImage
+    alt={"Daniel"}
+    src={daniel}
     useIntersectionObserver="true"
     effect="blur"
     delayMethod="throttle"
@@ -20,16 +42,25 @@ const Team = () => {
       <div className="inner1">
         <h2>Core Team</h2>
         <p>
-          Play as a Monkey Ninja warrior. Go on quests and missions, solo or
-          with your clan. Create your own custom avatar, craft tools and
-          weapons, fight monsters and dragons, intersct with other ninjas, be
-          whoever you want. Just remember the ninja legend: "As you are now, so
-          once was I; as I am now so you will be - Prepare for your future."
+          Our core team are all professionals in their respective fields.
         </p>
-        <p>Join our communities for all the latest updates!</p>
       </div>
       <div className="inner2">
-        <Nate />
+        <div className="teamwrap">
+          <Will />
+          <h4>Will</h4>
+          <p>CEO / Game Dev / Web3 Dev / Design</p>
+        </div>
+        <div className="teamwrap">
+          <Daniel />
+          <h4>Daniel</h4>
+          <p>Co-Leader / Web3 Dev / Design</p>
+        </div>
+        <div className="teamwrap">
+          <Nate />
+          <h4>Nate</h4>
+          <p>Website / Web3 Dev / Design</p>
+        </div>
       </div>
     </div>
   );

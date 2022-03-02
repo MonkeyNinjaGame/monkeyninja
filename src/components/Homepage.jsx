@@ -1,7 +1,7 @@
 // import { Card, Timeline, Typography } from "antd";
 // import React, { useMemo } from "react";
 // import { useMoralis } from "react-moralis";
-import { Hero, About, Utility, Dynasty, Tokenomics, CTA } from "components";
+import { Hero, About, Utility, Dynasty, Tokenomics, Team } from "components";
 
 // const { Text } = Typography;
 
@@ -38,7 +38,7 @@ export default function Homepage({ isServerInfo }) {
       <Utility />
       <Dynasty />
       <Tokenomics />
-      <CTA />
+      <Team />
     </div>
   );
 }
