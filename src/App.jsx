@@ -191,8 +191,9 @@ const App = ({ isServerInfo }) => {
           </div>
         </Router>
         <Footer className="footerMain">
-        <Text className="footerText">
-            <a href="https://docs.monkeyninja.io/whitepaper">Whitepaper</a> . <a href="https://docs.monkeyninja.io/policies">Policies</a>
+          <Text className="footerText">
+            <a href="https://docs.monkeyninja.io/whitepaper">Whitepaper</a> .{" "}
+            <a href="https://docs.monkeyninja.io/policies">Policies</a>
           </Text>
           <Text className="footerText">
             &copy; 2022 Monkey Ninja Dynasty . All Rights Reserved
