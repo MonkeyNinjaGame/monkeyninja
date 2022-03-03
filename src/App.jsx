@@ -12,7 +12,7 @@ import "./animation.css";
 import star from "assets/star.png";
 import MNLogo from "assets/logo.png";
 import MenuItems from "./components/MenuItems";
-import DownloadWP from "components/DownloadWP";
+//import DownloadWP from "components/DownloadWP";
 import Account from "components/Account/Account";
 //import TokenPrice from "components/TokenPrice";
 import ERC20Balance from "components/ERC20Balance";
@@ -191,9 +191,11 @@ const App = ({ isServerInfo }) => {
           </div>
         </Router>
         <Footer className="footerMain">
+        <Text className="footerText">
+            <a href="https://docs.monkeyninja.io/whitepaper">Whitepaper</a> . <a href="https://docs.monkeyninja.io/policies">Policies</a>
+          </Text>
           <Text className="footerText">
-            &copy; Copyright 2022 Monkey Ninja Dynasty
-            <DownloadWP />
+            &copy; 2022 Monkey Ninja Dynasty . All Rights Reserved
           </Text>
         </Footer>
       </Layout>

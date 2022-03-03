@@ -339,7 +339,6 @@ button:hover,
 .footerMain {
   text-align: center;
   background: #222;
-  padding-bottom: 0;
   font-family: Roboto, sans-serif;
 }
 
@@ -347,6 +346,14 @@ button:hover,
   width: 100%;
   text-align: center;
   color: #fff;
+  display: block;
+  padding: 5px 0;
+}
+
+.footerText a,
+.footerText a:hover,
+.footerText a:active {
+  color: #f4db73;
 }
 
 @media screen and (max-width: 1024px) {

@@ -11,7 +11,7 @@ class DownloadWP extends Component {
           rel="noreferrer"
           style={{ color: "#ffffff" }}
         >
-          Download White Paper
+          Download Whitepaper
         </a>
       </p>
     );
