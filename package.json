@@ -33,7 +33,7 @@
     "connect": "moralis-admin-cli connect-local-devchain",
     "watch:events": "moralis-admin-cli add-contract",
     "deploy": "node Truffle/scripts/deployContract.js",
-    "deploysite": "gh-pages -d build",
+    "stagesite": "gh-pages -d build",
     "clean": "npx gh-pages-clean",
     "prettier:check": "prettier --check .",
     "prettier:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md,json,html}\" .prettierrc --config ./.prettierrc",
