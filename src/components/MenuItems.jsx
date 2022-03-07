@@ -68,7 +68,11 @@ function MenuItems() {
             className="menuItem"
             icon={<HomeFilled style={{ color: "#fff" }} />}
           >
-            <NavLink to="/" className="menuItem" onClick={() => setIsModalVisible(false)}>
+            <NavLink
+              to="/"
+              className="menuItem"
+              onClick={() => setIsModalVisible(false)}
+            >
               Home
             </NavLink>
           </Menu.Item>
@@ -77,7 +81,11 @@ function MenuItems() {
             className="menuItem"
             icon={<CompassFilled style={{ color: "#fff" }} />}
           >
-            <NavLink to="/roadmap" className="menuItem" onClick={() => setIsModalVisible(false)}>
+            <NavLink
+              to="/roadmap"
+              className="menuItem"
+              onClick={() => setIsModalVisible(false)}
+            >
               Roadmap
             </NavLink>
           </Menu.Item>
@@ -86,7 +94,11 @@ function MenuItems() {
             className="menuItem"
             icon={<CalculatorFilled style={{ color: "#fff" }} />}
           >
-            <NavLink to="/1inch" className="menuItem" onClick={() => setIsModalVisible(false)}>
+            <NavLink
+              to="/1inch"
+              className="menuItem"
+              onClick={() => setIsModalVisible(false)}
+            >
               Dex
             </NavLink>
           </Menu.Item>
@@ -101,7 +113,11 @@ function MenuItems() {
               )
             }
           >
-            <NavLink to="" className="menuItem" onClick={() => setIsModalVisible(false)}>
+            <NavLink
+              to=""
+              className="menuItem"
+              onClick={() => setIsModalVisible(false)}
+            >
               Chart
             </NavLink>
           </Menu.Item>
@@ -174,7 +190,7 @@ function MenuItems() {
               size="18px"
             />
           </Menu.Item>
-          <Menu.Item style={{ display:"none" }}>
+          <Menu.Item style={{ display: "none" }}>
             <Account />
           </Menu.Item>
           {/*<Menu.Item key="/nftMarket" className="menuItem" icon={<ShopFilled style={{ color: "#fff" }} />}>

@@ -113,7 +113,7 @@ const App = ({ isServerInfo }) => {
   return (
     <>
       <div className="preload">
-        <img src={star} className="loader" alt="Loading" /><br />
+        <img src={star} className="loader" alt="Loading" />
       </div>
       <Layout style={{ height: "100vh" }}>
         <Router>
@@ -207,7 +207,15 @@ const App = ({ isServerInfo }) => {
           </div>
           <Text className="footerText">
             <h2>Meta Dynasty</h2>
-            <a href="https://docs.monkeyninja.io">Whitepaper</a> . <a href="https://docs.monkeyninja.io/legal/terms-of-use">Terms</a> . <a href="https://docs.monkeyninja.io/legal/privacy-policy">Policy</a> . <a href="https://docs.monkeyninja.io/legal/partners-and-investors">Partner &amp; Investor Inquiries</a>
+            <a href="https://docs.monkeyninja.io">Whitepaper</a> .{" "}
+            <a href="https://docs.monkeyninja.io/legal/terms-of-use">Terms</a> .{" "}
+            <a href="https://docs.monkeyninja.io/legal/privacy-policy">
+              Policy
+            </a>{" "}
+            .{" "}
+            <a href="https://docs.monkeyninja.io/legal/partners-and-investors">
+              Partner &amp; Investor Inquiries
+            </a>
           </Text>
           <Text className="footerText">
             &copy; 2022 Monkey Ninja Dynasty . All Rights Reserved

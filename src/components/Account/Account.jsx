@@ -134,7 +134,7 @@ function Account() {
         }}
       >
         Hi
-      </button> */}      
+      </button> */}
       <div style={styles.account} onClick={() => setIsModalVisible(true)}>
         {/*<p style={{ marginRight: "5px", ...styles.text }}>
           {getEllipsisTxt(account, 4)}
@@ -197,7 +197,7 @@ function Account() {
             fontWeight: "bold",
             background: "#ffb148",
             border: "0px",
-            padding: "8px 15px"
+            padding: "8px 15px",
           }}
           onClick={async () => {
             await logout();

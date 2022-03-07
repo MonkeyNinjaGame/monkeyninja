@@ -24,9 +24,7 @@ const DEX = () => {
     >
       <h1>Ninja Swap</h1>
       <h2>Coming soon...</h2>
-      <p>
-        To get your Okane now, follow these directions!
-      </p>
+      <p>To get your Okane now, follow these directions!</p>
 
       <h3>
         <u>Step 1</u>
