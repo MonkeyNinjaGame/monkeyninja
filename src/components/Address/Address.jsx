@@ -8,12 +8,13 @@ import { Skeleton } from "antd";
 
 const styles = {
   address: {
-    height: "36px",
+    height: "30px",
     display: "flex",
     gap: "5px",
-    backgroundColor: "rgba(255, 255, 255, 0.1)",
-    borderRadius: "9px",
+    backgroundColor: "transparent",
+    borderRadius: "0",
     alignItems: "center",
+    justifyContent: "center",
   },
 };
 
@@ -34,11 +35,11 @@ function Address(props) {
   const Copy = () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="26"
-      height="26"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
-      strokeWidth="2"
-      stroke="#1780FF"
+      strokeWidth="1"
+      stroke="#ffb148"
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -59,7 +60,7 @@ function Address(props) {
   return (
     <div style={{ ...styles.address, ...props.style }}>
       {props.avatar === "left" && <Blockie address={address} size={7} />}
-      <p>{props.size ? getEllipsisTxt(address, props.size) : address}</p>
+      <p style={{ paddingBottom: "0" }}>{props.size ? getEllipsisTxt(address, props.size) : address}</p>
       {props.avatar === "right" && <Blockie address={address} size={7} />}
       {props.copyable && (isClicked ? <Check /> : <Copy />)}
     </div>

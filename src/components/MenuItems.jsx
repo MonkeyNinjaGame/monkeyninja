@@ -1,5 +1,6 @@
 import { useLocation } from "react-router";
-import { Menu } from "antd";
+import { useState } from "react";
+import { Menu, Modal } from "antd";
 import { NavLink } from "react-router-dom";
 import {
   MenuOutlined,
@@ -9,125 +10,213 @@ import {
   CalculatorFilled /* ShopFilled,*/,
 } from "@ant-design/icons";
 import TokenPrice from "components/TokenPrice";
-
-const styles = {
-  menuItem: {
-    color: "#fff",
-    background: "transparent",
-    fontSize: "12px",
-  },
-};
+import Account from "components/Account/Account";
 
 function MenuItems() {
   const { pathname } = useLocation();
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   return (
-    <div className="menuContain">
-      <Menu
-        theme="dark"
-        mode="horizontal"
-        overflowedIndicator={<MenuOutlined />}
-        style={{
-          display: "flex",
-          fontSize: "12px",
+    <>
+      <div className="mobileMenu" onClick={() => setIsModalVisible(true)}>
+        {/*<p style={{ marginRight: "5px", ...styles.text }}>
+          {getEllipsisTxt(account, 4)}
+        </p>*/}
+        {/*<Blockie currentWallet scale={3} />*/}
+        <MenuOutlined />
+      </div>
+      <Modal
+        visible={isModalVisible}
+        footer={null}
+        onCancel={() => setIsModalVisible(false)}
+        bodyStyle={{
+          padding: "15px",
+          fontSize: "20px",
           fontWeight: "500",
-          width: "100%",
-          justifyContent: "right",
-          background: "transparent",
-          border: "0px",
-          textTransform: "uppercase",
         }}
-        defaultSelectedKeys={[pathname]}
+        style={{ fontSize: "16px", fontWeight: "500" }}
+        width="400px"
       >
-        <Menu.Item
-          key="/"
-          style={styles.menuItem}
-          icon={<HomeFilled style={{ color: "#fff" }} />}
-        >
-          <NavLink to="/" style={styles.menuItem}>
-            Home
-          </NavLink>
-        </Menu.Item>
-        <Menu.Item
-          key="/roadmap"
-          style={styles.menuItem}
-          icon={<CompassFilled style={{ color: "#fff" }} />}
-        >
-          <NavLink to="/roadmap" style={styles.menuItem}>
-            Roadmap
-          </NavLink>
-        </Menu.Item>
-        <Menu.Item
-          key="/1inch"
-          style={styles.menuItem}
-          icon={<CalculatorFilled style={{ color: "#fff" }} />}
-        >
-          <NavLink to="/1inch" style={styles.menuItem}>
-            Dex
-          </NavLink>
-        </Menu.Item>
-        <Menu.Item
-          key=""
-          style={styles.menuItem}
-          icon={<SlidersFilled style={{ color: "#fff" }} />}
-          onClick={() =>
-            window.open(
-              "https://www.dextools.io/app/polygon/pair-explorer/0x5ca5162a426b844b7b0d6e9449c44f01d073b878",
-              "_blank",
-            )
-          }
-        >
-          <NavLink to="" style={styles.menuItem}>
-            Chart
-          </NavLink>
-        </Menu.Item>
-        <Menu.Item className="tokenPrice">
+        <div className="tokenPrice">
           <TokenPrice
             address="0xe7541aa266fa18edc1b4cfd766b814ec25d9c937"
             chain="polygon"
             image="https://monkeyninja.io/static/media/6-2.bdd53fa3.png"
-            size="25px"
+            size="18px"
           />
-        </Menu.Item>
-        {/*<Menu.Item key="/nftMarket" style={styles.menuItem} icon={<ShopFilled style={{ color: "#fff" }} />}>
-          <NavLink to="/nftMarket" style={styles.menuItem}>
-            Market
-          </NavLink>
-        </Menu.Item>*/}
-        {/*<Menu.Item key="/dojo" style={styles.menuItem} icon={<UserOutlined style={{ color: "#fff" }} />}>
-          <NavLink to="/dojo" style={styles.menuItem}>
-            Dojo
-          </NavLink>
-        </Menu.Item>*/}
-        {/*<Menu.Item key="/nftBalance" style={styles.menuItem}>
-            <NavLink to="/nftBalance" style={styles.menuItem}>
-              My NFTs
+        </div>
+        <h2>Menu</h2>
+        <Menu
+          theme="dark"
+          mode="vertical"
+          overflowedIndicator={""}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            fontSize: "12px",
+            fontWeight: "500",
+            width: "100%",
+            justifyContent: "center",
+            background: "transparent",
+            border: "0px",
+            textTransform: "uppercase",
+          }}
+          defaultSelectedKeys={[pathname]}
+        >
+          <Menu.Item
+            key="/"
+            className="menuItem"
+            icon={<HomeFilled style={{ color: "#fff" }} />}
+          >
+            <NavLink to="/" className="menuItem" onClick={() => setIsModalVisible(false)}>
+              Home
+            </NavLink>
+          </Menu.Item>
+          <Menu.Item
+            key="/roadmap"
+            className="menuItem"
+            icon={<CompassFilled style={{ color: "#fff" }} />}
+          >
+            <NavLink to="/roadmap" className="menuItem" onClick={() => setIsModalVisible(false)}>
+              Roadmap
+            </NavLink>
+          </Menu.Item>
+          <Menu.Item
+            key="/1inch"
+            className="menuItem"
+            icon={<CalculatorFilled style={{ color: "#fff" }} />}
+          >
+            <NavLink to="/1inch" className="menuItem" onClick={() => setIsModalVisible(false)}>
+              Dex
+            </NavLink>
+          </Menu.Item>
+          <Menu.Item
+            key=""
+            className="menuItem"
+            icon={<SlidersFilled style={{ color: "#fff" }} />}
+            onClick={() =>
+              window.open(
+                "https://www.dextools.io/app/polygon/pair-explorer/0x5ca5162a426b844b7b0d6e9449c44f01d073b878",
+                "_blank",
+              )
+            }
+          >
+            <NavLink to="" className="menuItem" onClick={() => setIsModalVisible(false)}>
+              Chart
+            </NavLink>
+          </Menu.Item>
+        </Menu>
+      </Modal>
+      <div className="menuContain">
+        <Menu
+          theme="dark"
+          mode="horizontal"
+          overflowedIndicator={""}
+          style={{
+            display: "flex",
+            fontSize: "12px",
+            fontWeight: "500",
+            width: "100%",
+            justifyContent: "right",
+            background: "transparent",
+            border: "0px",
+            textTransform: "uppercase",
+          }}
+          defaultSelectedKeys={[pathname]}
+        >
+          <Menu.Item
+            key="/"
+            className="menuItem"
+            icon={<HomeFilled style={{ color: "#fff" }} />}
+          >
+            <NavLink to="/" className="menuItem">
+              Home
+            </NavLink>
+          </Menu.Item>
+          <Menu.Item
+            key="/roadmap"
+            className="menuItem"
+            icon={<CompassFilled style={{ color: "#fff" }} />}
+          >
+            <NavLink to="/roadmap" className="menuItem">
+              Roadmap
+            </NavLink>
+          </Menu.Item>
+          <Menu.Item
+            key="/1inch"
+            className="menuItem"
+            icon={<CalculatorFilled style={{ color: "#fff" }} />}
+          >
+            <NavLink to="/1inch" className="menuItem">
+              Dex
+            </NavLink>
+          </Menu.Item>
+          <Menu.Item
+            key=""
+            className="menuItem"
+            icon={<SlidersFilled style={{ color: "#fff" }} />}
+            onClick={() =>
+              window.open(
+                "https://www.dextools.io/app/polygon/pair-explorer/0x5ca5162a426b844b7b0d6e9449c44f01d073b878",
+                "_blank",
+              )
+            }
+          >
+            <NavLink to="" className="menuItem">
+              Chart
+            </NavLink>
+          </Menu.Item>
+          <Menu.Item className="tokenPrice">
+            <TokenPrice
+              address="0xe7541aa266fa18edc1b4cfd766b814ec25d9c937"
+              chain="polygon"
+              image="https://monkeyninja.io/static/media/6-2.bdd53fa3.png"
+              size="18px"
+            />
+          </Menu.Item>
+          <Menu.Item style={{ display:"none" }}>
+            <Account />
+          </Menu.Item>
+          {/*<Menu.Item key="/nftMarket" className="menuItem" icon={<ShopFilled style={{ color: "#fff" }} />}>
+            <NavLink to="/nftMarket" className="menuItem">
+              Market
             </NavLink>
           </Menu.Item>*/}
-        {/*<Menu.Item key="/nftTransactions" style={styles.menuItem}>
-            <NavLink to="/nftTransactions" style={styles.menuItem}>
-              Transactions
+          {/*<Menu.Item key="/dojo" className="menuItem" icon={<UserOutlined style={{ color: "#fff" }} />}>
+            <NavLink to="/dojo" className="menuItem">
+              Dojo
             </NavLink>
           </Menu.Item>*/}
-        {/*<Menu.Item key="/wallet" style={{ color: "#fff", background: "#222" }}>
-            <NavLink to="/wallet" style={{ color: "#fff", background: "#222" }}>
-              Wallet
-            </NavLink>
-          </Menu.Item>*/}
-        {/*<Menu.Item key="onramp">
-          <NavLink to="/onramp">Fiat</NavLink>
-          </Menu.Item>*/}
-        {/*<Menu.Item key="/erc20balance">
-          <NavLink to="/erc20balance">Balances</NavLink>
-          </Menu.Item>*/}
-        {/*<Menu.Item key="/erc20transfers">
-          <NavLink to="/erc20transfers">Transfers</NavLink>
-          </Menu.Item>*/}
-        {/*<Menu.Item key="/contract">
-          <NavLink to="/contract">Contract</NavLink>
-          </Menu.Item>*/}
-      </Menu>
-    </div>
+          {/*<Menu.Item key="/nftBalance" className="menuItem">
+              <NavLink to="/nftBalance" className="menuItem">
+                My NFTs
+              </NavLink>
+            </Menu.Item>*/}
+          {/*<Menu.Item key="/nftTransactions" className="menuItem">
+              <NavLink to="/nftTransactions" className="menuItem">
+                Transactions
+              </NavLink>
+            </Menu.Item>*/}
+          {/*<Menu.Item key="/wallet" style={{ color: "#fff", background: "#222" }}>
+              <NavLink to="/wallet" style={{ color: "#fff", background: "#222" }}>
+                Wallet
+              </NavLink>
+            </Menu.Item>*/}
+          {/*<Menu.Item key="onramp">
+            <NavLink to="/onramp">Fiat</NavLink>
+            </Menu.Item>*/}
+          {/*<Menu.Item key="/erc20balance">
+            <NavLink to="/erc20balance">Balances</NavLink>
+            </Menu.Item>*/}
+          {/*<Menu.Item key="/erc20transfers">
+            <NavLink to="/erc20transfers">Transfers</NavLink>
+            </Menu.Item>*/}
+          {/*<Menu.Item key="/contract">
+            <NavLink to="/contract">Contract</NavLink>
+            </Menu.Item>*/}
+        </Menu>
+      </div>
+    </>
   );
 }
 

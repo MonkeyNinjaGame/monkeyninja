@@ -17,7 +17,7 @@
   height: 100vh;
   top: 0;
   z-index: 99999;
-  background: #b80000;
+  background: #222;
   transition: opacity 0.5s ease;
 }
 
@@ -221,6 +221,15 @@
   }
 }
 
+/*** MENU ***/
+.menuContain {
+  width: 100%;
+}
+
+.mobileMenu {
+  display: none;
+}
+
 @-webkit-keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
@@ -245,8 +254,13 @@
 
 @media screen and (max-width: 1024px) {
   .menuContain {
-    width: 70px;
+    display: none;
+  }
+  .mobileMenu {
+    display: block;
+    width: 50px;
     margin-left: auto;
+    padding: 10px 35px 0;
   }
   @keyframes slidein {
     0% {

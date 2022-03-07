@@ -1,40 +1,43 @@
 import { useMoralis } from "react-moralis";
-import { getEllipsisTxt } from "helpers/formatters";
+//import { getEllipsisTxt } from "helpers/formatters";
 //import Blockie from "../Blockie";
 import { Button, Card, Modal } from "antd";
 import { useState } from "react";
 import Address from "../Address/Address";
-import { SelectOutlined } from "@ant-design/icons";
+import { SelectOutlined, UserOutlined } from "@ant-design/icons";
 import { getExplorer } from "helpers/networks";
 import Text from "antd/lib/typography/Text";
 import { connectors } from "./config";
+import "./account.css";
 
 const styles = {
   account: {
     borderRadius: "0",
     backgroundColor: "transparent",
     cursor: "pointer",
+    padding: "8px 10px 0 0",
   },
   text: {
     color: "#fff",
-    background: "#b80000",
+    background: "transparent",
     cursor: "pointer",
     padding: "10px",
-    marginRight: "10px",
-    marginLeft: "20px",
+    marginRight: "0",
+    marginLeft: "0",
     whiteSpace: "nowrap",
-    fontSize: "16px",
+    fontSize: "12px",
   },
   unauth: {
     color: "#fff",
-    background: "#b80000",
+    background: "#ffb148",
     cursor: "pointer",
     padding: "8px",
     marginRight: "0",
     marginLeft: "0",
     whiteSpace: "nowrap",
-    fontSize: "0.8rem",
+    fontSize: "12px",
     fontFamily: "Manrope",
+    borderRadius: "20px 0 20px 0",
   },
   connector: {
     alignItems: "center",
@@ -44,7 +47,7 @@ const styles = {
     justifyContent: "center",
     marginLeft: "auto",
     marginRight: "auto",
-    padding: "20px 5px",
+    padding: "10px 5px",
     cursor: "pointer",
   },
   icon: {
@@ -52,7 +55,7 @@ const styles = {
     fill: "rgb(40, 13, 95)",
     flexShrink: "0",
     marginBottom: "8px",
-    height: "50px",
+    height: "30px",
   },
 };
 
@@ -73,12 +76,10 @@ function Account() {
           footer={null}
           onCancel={() => setIsAuthModalVisible(false)}
           bodyStyle={{
-            padding: "15px",
-            fontSize: "20px",
-            fontWeight: "500",
+            padding: "1rem",
+            fontSize: "16px",
+            fontWeight: "normal",
           }}
-          style={{ fontSize: "16px", fontWeight: "500" }}
-          width="340px"
         >
           <div
             style={{
@@ -86,7 +87,7 @@ function Account() {
               display: "flex",
               justifyContent: "center",
               fontWeight: "700",
-              fontSize: "20px",
+              fontSize: "16px",
             }}
           >
             Connect Wallet
@@ -107,7 +108,7 @@ function Account() {
                 }}
               >
                 <img src={icon} alt={title} style={styles.icon} />
-                <Text style={{ fontSize: "16px", color: "#fff" }}>{title}</Text>
+                <Text style={{ fontSize: "12px", color: "#fff" }}>{title}</Text>
               </div>
             ))}
           </div>
@@ -133,26 +134,27 @@ function Account() {
         }}
       >
         Hi
-      </button> */}
+      </button> */}      
       <div style={styles.account} onClick={() => setIsModalVisible(true)}>
-        <p style={{ marginRight: "5px", ...styles.text }}>
-          {getEllipsisTxt(account, 6)}
-        </p>
+        {/*<p style={{ marginRight: "5px", ...styles.text }}>
+          {getEllipsisTxt(account, 4)}
+        </p>*/}
         {/*<Blockie currentWallet scale={3} />*/}
+        <UserOutlined />
       </div>
       <Modal
         visible={isModalVisible}
         footer={null}
         onCancel={() => setIsModalVisible(false)}
         bodyStyle={{
-          padding: "20px",
+          padding: "15px",
           fontSize: "20px",
           fontWeight: "500",
         }}
         style={{ fontSize: "16px", fontWeight: "500" }}
         width="400px"
       >
-        Account
+        <h2>Account</h2>
         <Card
           style={{
             marginTop: "0",
@@ -169,7 +171,7 @@ function Account() {
             avatar="none"
             size={6}
             copyable
-            style={{ fontSize: "20px", color: "#fff" }}
+            style={{ fontSize: "14px", color: "#fff" }}
           />
           <div style={{ marginTop: "10px", padding: "0 10px" }}>
             <a
@@ -178,7 +180,7 @@ function Account() {
               rel="noreferrer"
             >
               <SelectOutlined
-                style={{ marginRight: "5px", width: "16px", height: "16px" }}
+                style={{ marginRight: "15px", width: "16px", height: "16px" }}
               />
               View on Explorer
             </a>
@@ -188,19 +190,20 @@ function Account() {
           size="large"
           type="primary"
           style={{
-            width: "100%",
+            width: "auto",
             marginTop: "10px",
             borderRadius: "0rem",
             fontSize: "16px",
-            fontWeight: "500",
-            background: "#444",
+            fontWeight: "bold",
+            background: "#ffb148",
             border: "0px",
+            padding: "8px 15px"
           }}
           onClick={async () => {
             await logout();
             window.localStorage.removeItem("connectorId");
             setIsModalVisible(false);
-            window.open("/", "_self");
+            //window.open("/", "_self");
           }}
         >
           Disconnect Wallet

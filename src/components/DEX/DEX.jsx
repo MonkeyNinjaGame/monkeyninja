@@ -1,7 +1,7 @@
 import React from "react";
 // import Text from "antd/lib/typography/Text";
-import "../Roadmap/roadmap.css";
-import Background from "assets/bg-dex-01.png";
+import "./dex.css";
+import Background from "assets/bg-home-01.png";
 import Step1 from "../../assets/step1.png";
 import Step2 from "../../assets/step2.png";
 // import Step3 from '../../assets/step3.png';
@@ -12,21 +12,21 @@ import Step2 from "../../assets/step2.png";
 const DEX = () => {
   return (
     <div
-      id="roadmap"
-      className="roadmap"
+      id="dex"
+      className="dex"
       style={{
         backgroundImage: `url("${Background}")`,
         backgroundPosition: "center",
-        backgroundSize: "contain",
+        backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
       }}
     >
-      <h1 style={{ marginTop: "-13px" }}>Ninja Swap</h1>
-      <h2 style={{ marginTop: "-22px" }}>Coming soon...</h2>
-      <h3 style={{ paddingBottom: "40px" }}>
+      <h1>Ninja Swap</h1>
+      <h2>Coming soon...</h2>
+      <p>
         To get your Okane now, follow these directions!
-      </h3>
+      </p>
 
       <h3>
         <u>Step 1</u>

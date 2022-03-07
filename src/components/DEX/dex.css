@@ -1,4 +1,4 @@
-.roadmap {
+.dex {
   background: #222;
   width: 100%;
   min-height: 90vh;
@@ -9,28 +9,32 @@
   background-size: cover;*/
 }
 
-.roadmap p {
+.dex p {
   color: #c0c0c0;
 }
 
-.roadmap h2 {
+.dex a {
+  color: #f4db73;
+}
+
+.dex h2 {
   font-weight: bold !important;
   color: #b80000;
 }
 
-/*.roadmap img {
+/*.dex img {
   width: 100%;
   padding: 8rem 6.4rem;
 }*/
 
-.roadmap img.stepImage {
+.dex img.stepImage {
   max-width: 600px;
   width: 100%;
   padding: 20px;
   margin: 0 auto;
 }
 
-.roadmap li {
+.dex li {
   color: #c0c0c0;
   line-height: 1.4em;
 }
@@ -42,18 +46,18 @@
 
 .rmlist li:before {
   content: "✓";
-  color: #f4db73;
+  color: #b80000;
   margin-right: 5px;
 }
 
 @media screen and (max-width: 768px) {
-  .roadmap {
+  .dex {
     padding: 8rem 1rem 4rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .roadmap {
+  .dex {
     padding: 8rem 1rem 4rem;
   }
 }

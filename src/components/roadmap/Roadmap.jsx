@@ -1,7 +1,7 @@
 import React from "react";
 // import Text from "antd/lib/typography/Text";
 import "./roadmap.css";
-import Background from "assets/bg-roadmap-01.png";
+import Background from "assets/bg-home-01.png";
 
 const Roadmap = () => {
   return (
@@ -11,7 +11,7 @@ const Roadmap = () => {
       style={{
         backgroundImage: `url("${Background}")`,
         backgroundPosition: "center",
-        backgroundSize: "contain",
+        backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
       }}
@@ -26,7 +26,7 @@ const Roadmap = () => {
         <li>Integrate Blockchain ETH, Poly, BNB, AVA Into Website</li>
         <li>Release Official Road Map</li>
         <li>Release Official White Papers</li>
-        <li>Drop Investor NFT Collection (rare & unique)</li>
+        <li>Drop Investor NFT Collection (rare &amp; unique)</li>
         <li>Drop Christmas NFT Collection (rare)</li>
       </ul>
 

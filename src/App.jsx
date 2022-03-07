@@ -44,6 +44,7 @@ const styles = {
     padding: "0",
     flex: "1 0 0",
     alignItems: "top",
+    background: "#222222",
   },
   header: {
     position: "absolute",
@@ -56,7 +57,7 @@ const styles = {
     alignItems: "center",
     fontFamily: "Roboto, sans-serif",
     borderBottom: "0px",
-    padding: "0 10px",
+    padding: "0 1rem",
     //boxShadow: "0 1px 10px rgb(151 164 175 / 10%)",
   },
   headerRight: {
@@ -71,6 +72,13 @@ const styles = {
   logoLeft: {
     height: "auto",
     marginTop: "0px",
+    //maxWidth: "180px",
+    //minWidth: "40px",
+    cursor: "pointer",
+  },
+  logoCenter: {
+    height: "auto",
+    margin: "100px",
     //maxWidth: "180px",
     //minWidth: "40px",
     cursor: "pointer",
@@ -105,7 +113,7 @@ const App = ({ isServerInfo }) => {
   return (
     <>
       <div className="preload">
-        <img src={star} className="loader" alt="Loading" />
+        <img src={star} className="loader" alt="Loading" /><br />
       </div>
       <Layout style={{ height: "100vh" }}>
         <Router>
@@ -191,9 +199,15 @@ const App = ({ isServerInfo }) => {
           </div>
         </Router>
         <Footer className="footerMain">
+          <div className="footerinner1">
+            <Logo
+              style={styles.logoCenter}
+              onClick={() => window.open("/", "_self")}
+            />
+          </div>
           <Text className="footerText">
-            <a href="https://docs.monkeyninja.io/whitepaper">Whitepaper</a> .{" "}
-            <a href="https://docs.monkeyninja.io/policies">Policies</a>
+            <h2>Meta Dynasty</h2>
+            <a href="https://docs.monkeyninja.io">Whitepaper</a> . <a href="https://docs.monkeyninja.io/legal/terms-of-use">Terms</a> . <a href="https://docs.monkeyninja.io/legal/privacy-policy">Policy</a> . <a href="https://docs.monkeyninja.io/legal/partners-and-investors">Partner &amp; Investor Inquiries</a>
           </Text>
           <Text className="footerText">
             &copy; 2022 Monkey Ninja Dynasty . All Rights Reserved

@@ -32,6 +32,7 @@ ul,
 ol {
   list-style-position: inside;
   color: #fff;
+  font-size: 16px;
 }
 
 body,
@@ -57,7 +58,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.2;
-  background-color: #b80000;
+  background-color: #222;
   padding: 0;
   margin: 0;
   font-size: 16px;
@@ -68,6 +69,7 @@ body {
 p {
   line-height: 1.6;
   padding-bottom: 20px;
+  font-size: 16px;
 }
 
 a {

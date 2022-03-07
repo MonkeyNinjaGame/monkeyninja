@@ -20,9 +20,16 @@
   border-bottom: 2px solid #f4db73 !important;
 }
 
+.menuItem {
+  color: #fff !important;
+  background: transparent;
+  font-size: 12px;
+}
+
 .ant-menu-item {
   text-transform: uppercase;
   padding: 0 15px !important;
+  background-color: transparent !important;
 }
 
 .ant-menu-item a:hover {
@@ -94,15 +101,20 @@
 
 .ant-menu-dark .ant-menu-vertical {
   background: #222;
-  height: auto;
-  margin-top: -10px;
-  min-width: 270px;
-  margin-right: -40px;
-  padding: 10px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 4rem;
+  position: fixed;
+}
+
+.ant-modal {
+  background: #222;
 }
 
 .ant-modal-header {
-  background: #111;
+  background: transparent;
   border-bottom: 0px;
 }
 
@@ -112,11 +124,17 @@
 
 .ant-modal-content {
   overflow: auto;
-  border-radius: 1rem;
+  border-radius: 0;
   width: 100%;
-  background: #222;
+  background: transparent;
   color: #fff;
-  border: 4px solid #111;
+  border: 0px;
+  box-shadow: 0 0 0 0;
+}
+
+.ant-modal-body {
+  background: transparent;
+  text-align: center;
 }
 
 .ant-modal-content h4 {
@@ -126,6 +144,12 @@
 .ant-modal-close:hover {
   background: #222;
   color: #f4db73;
+}
+
+.ant-modal h2 {
+  color: #b80000;
+  margin-bottom: 15px;
+  font-size: 2.4rem;
 }
 
 .ant-tabs {
@@ -148,7 +172,7 @@
 }
 
 .ant-layout {
-  background: #b80000;
+  background: #222;
   height: 100h !important;
 }
 
@@ -167,9 +191,9 @@
 }
 
 .anticon-close svg {
-  color: #ccc;
+  color: #c0c0c0;
   width: 30px;
-  height: 20px;
+  height: 30px;
   padding: 0;
 }
 
@@ -224,7 +248,7 @@
 }
 
 body {
-  background: #b80000;
+  background: #222222;
   padding: 0;
   margin: 0;
   min-height: 100vh;
@@ -328,10 +352,6 @@ button:hover,
   display: none;
 }
 
-.menuContain {
-  width: 100%;
-}
-
 .copyText input {
   width: 100%;
 }
@@ -339,7 +359,14 @@ button:hover,
 .footerMain {
   text-align: center;
   background: #222;
-  font-family: Roboto, sans-serif;
+  font-family: "Manrope";
+  padding: 3rem 1rem 3rem 1rem;
+}
+
+.footerinner1 {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 0 0;
 }
 
 .footerText {
@@ -348,6 +375,14 @@ button:hover,
   color: #fff;
   display: block;
   padding: 5px 0;
+}
+
+.footerText h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 10px;
+  padding-top: 0;
 }
 
 .footerText a,
@@ -360,14 +395,59 @@ button:hover,
   .ant-menu-item.tokenPrice {
     left: 140px !important;
   }
+  .ant-modal .menuItem {
+    text-align: center;
+    font-size: 16px;
+  }
+  .ant-modal .tokenPrice {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .footerMain {
-    padding-bottom: 45px;
+    padding: 3rem 1rem 6rem 1rem;
   }
-
   .ant-back-top {
     bottom: 60px;
+  }
+  .ant-menu-dark .ant-menu-vertical {
+    padding: 1rem;
+  }
+  .ant-modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 100% !important;
+    height: 100vh !important;
+    margin: 0;
+    top: 0;
+    padding: 0.5rem;
+    font-size: 16px;
+    background: rgba(34, 34, 34, 0.98);
+  }
+  .ant-modal-content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .ant-modal-body {
+    min-width: 300px;
+    text-align: center;
+  }
+  .ant-card {
+    background: transparent !important;
+  }
+  .ant-card-body {
+    background: transparent;
   }
 }
