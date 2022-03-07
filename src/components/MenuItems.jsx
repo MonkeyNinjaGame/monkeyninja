@@ -1,6 +1,6 @@
 import { useLocation } from "react-router";
 import { useState } from "react";
-import { Menu, Modal } from "antd";
+import { Menu, Modal, Tooltip } from "antd";
 import { NavLink } from "react-router-dom";
 import {
   MenuOutlined,
@@ -37,14 +37,16 @@ function MenuItems() {
         style={{ fontSize: "16px", fontWeight: "500" }}
         width="400px"
       >
-        <div className="tokenPrice">
-          <TokenPrice
-            address="0xe7541aa266fa18edc1b4cfd766b814ec25d9c937"
-            chain="polygon"
-            image="https://monkeyninja.io/static/media/6-2.bdd53fa3.png"
-            size="18px"
-          />
-        </div>
+        <Tooltip placement="bottom" title={"Okane Price"}>
+          <div className="tokenPrice">
+            <TokenPrice
+              address="0xe7541aa266fa18edc1b4cfd766b814ec25d9c937"
+              chain="polygon"
+              image="https://monkeyninja.io/static/media/6-2.bdd53fa3.png"
+              size="18px"
+            />
+          </div>
+        </Tooltip>
         <h2>Menu</h2>
         <Menu
           theme="dark"
@@ -182,14 +184,16 @@ function MenuItems() {
               Chart
             </NavLink>
           </Menu.Item>
-          <Menu.Item className="tokenPrice">
-            <TokenPrice
-              address="0xe7541aa266fa18edc1b4cfd766b814ec25d9c937"
-              chain="polygon"
-              image="https://monkeyninja.io/static/media/6-2.bdd53fa3.png"
-              size="18px"
-            />
-          </Menu.Item>
+          <Tooltip placement="bottom" title={"Okane Price"}>
+            <Menu.Item className="tokenPrice">
+              <TokenPrice
+                address="0xe7541aa266fa18edc1b4cfd766b814ec25d9c937"
+                chain="polygon"
+                image="https://monkeyninja.io/static/media/6-2.bdd53fa3.png"
+                size="18px"
+              />
+            </Menu.Item>
+          </Tooltip>
           <Menu.Item style={{ display: "none" }}>
             <Account />
           </Menu.Item>
