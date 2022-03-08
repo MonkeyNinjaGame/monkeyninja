@@ -72,7 +72,7 @@ const styles = {
   logoLeft: {
     height: "auto",
     marginTop: "0px",
-    //maxWidth: "180px",
+    maxWidth: "180px",
     //minWidth: "40px",
     cursor: "pointer",
   },
