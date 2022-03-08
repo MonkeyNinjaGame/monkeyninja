@@ -72,8 +72,9 @@ const styles = {
   logoLeft: {
     height: "auto",
     marginTop: "0px",
+    width: "100%",
     maxWidth: "180px",
-    //minWidth: "40px",
+    minWidth: "0px",
     cursor: "pointer",
   },
   logoCenter: {
