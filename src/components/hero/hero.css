@@ -63,13 +63,15 @@
   padding: 0;
   line-height: 0.85;
   color: #c0c0c0;
+  text-shadow: -2px 0 #222, 0 2px #222, 2px 0 #222, 0 -2px #222;
 }
 
 .hero .inner2 h2 {
   font-size: 4vw;
   font-weight: normal;
-  color: #fff;
+  color: #b80000;
   margin-bottom: 10px;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
 .hero .inner2 h3 {
@@ -108,7 +110,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hero {
     padding: 6rem 1rem 6rem 1rem;
     flex-direction: column-reverse;
@@ -129,7 +131,7 @@
     flex-basis: 50%;
     width: 100%;
     text-align: center;
-    padding: 1rem 1rem 6rem;
+    padding: 1rem;
   }
   .hero .inner2 h1 {
     font-size: 13vw;

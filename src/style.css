@@ -407,7 +407,7 @@ button:hover,
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footerMain {
     padding: 3rem 1rem 6rem 1rem;
   }

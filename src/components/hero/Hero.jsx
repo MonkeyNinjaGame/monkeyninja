@@ -38,7 +38,7 @@ const Hero = () => {
       {/*HEADING & CTA*/}
       <div className="inner2">
         <h1>
-          Monkey <span style={{ color: "#b80000" }}>Ninja</span>
+          Monkey <span style={{ color: "#f4db73" }}>Ninja</span>
         </h1>
         <h2>Meta Dynasty</h2>
         <h3>
