@@ -73,7 +73,7 @@ const styles = {
     height: "auto",
     marginTop: "0px",
     width: "100%",
-    maxWidth: "180px",
+    maxWidth: "200px",
     minWidth: "0px",
     cursor: "pointer",
   },

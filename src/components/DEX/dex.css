@@ -1,12 +1,14 @@
 .dex {
-  background: #222;
   width: 100%;
   min-height: 90vh;
   padding: 8rem 6.4rem;
   text-align: center;
-  /*background: url("../../assets/bg-01.png");
+  background: transparent;
+  background-image: url("assets/bg-home-01.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;*/
 }
 
 .dex p {

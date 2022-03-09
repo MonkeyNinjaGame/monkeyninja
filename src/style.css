@@ -173,7 +173,7 @@
 
 .ant-layout {
   background: #222;
-  height: 100h !important;
+  height: 100vh !important;
 }
 
 .anticon svg {
@@ -381,7 +381,7 @@ button:hover,
 .footerText h2 {
   font-size: 2rem;
   font-weight: normal;
-  color: #fff;
+  color: #b80000;
   margin-bottom: 10px;
   padding-top: 0;
 }
@@ -390,6 +390,12 @@ button:hover,
 .footerText a:hover,
 .footerText a:active {
   color: #f4db73;
+}
+
+.skew {
+  -ms-transform: skewX(-20deg); /* IE 9 */
+  -webkit-transform: skewX(-20deg); /* Safari */
+  transform: skew(-20deg);
 }
 
 @media screen and (max-width: 1024px) {

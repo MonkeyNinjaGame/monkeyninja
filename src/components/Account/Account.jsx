@@ -8,7 +8,6 @@ import { SelectOutlined, UserOutlined } from "@ant-design/icons";
 import { getExplorer } from "helpers/networks";
 import Text from "antd/lib/typography/Text";
 import { connectors } from "./config";
-import "./account.css";
 
 const styles = {
   account: {
@@ -37,7 +36,7 @@ const styles = {
     whiteSpace: "nowrap",
     fontSize: "12px",
     fontFamily: "Manrope",
-    borderRadius: "20px 0 20px 0",
+    //borderRadius: "20px 0 20px 0",
   },
   connector: {
     alignItems: "center",
@@ -68,7 +67,7 @@ function Account() {
   if (!isAuthenticated || !account) {
     return (
       <>
-        <div onClick={() => setIsAuthModalVisible(true)}>
+        <div onClick={() => setIsAuthModalVisible(true)} className="skew">
           <p style={styles.unauth}>Ninja Connect</p>
         </div>
         <Modal
