@@ -56,15 +56,18 @@ const getChainIdByName = (chainName) => {
 const IsNative = (address) =>
   address === "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
 
-function DEX({ chain, customTokens = {
-  "0xe7541aa266fa18edc1b4cfd766b814ec25d9c937": {
-    address: "0xe7541aa266fa18edc1b4cfd766b814ec25d9c937",
-    decimals: 18,
-    logoURI: "https://monkeyninja.io/token-01.png",
-    name: "Okane",
-    symbol: "Okane",
+function DEX({
+  chain,
+  customTokens = {
+    "0xe7541aa266fa18edc1b4cfd766b814ec25d9c937": {
+      address: "0xe7541aa266fa18edc1b4cfd766b814ec25d9c937",
+      decimals: 18,
+      logoURI: "https://monkeyninja.io/token-01.png",
+      name: "Okane",
+      symbol: "Okane",
+    },
   },
-} }) {
+}) {
   const { trySwap, tokenList, getQuote } = useInchDex(chain);
 
   const { Moralis, isInitialized, chainId } = useMoralis();
@@ -196,10 +199,7 @@ function DEX({ chain, customTokens = {
   return (
     <div className="dex">
       <Card style={styles.card} bodyStyle={{ padding: "15px" }}>
-        <Card
-          style={{ borderRadius: "0" }}
-          bodyStyle={{ padding: "0.8rem" }}
-        >
+        <Card style={{ borderRadius: "0" }} bodyStyle={{ padding: "0.8rem" }}>
           <div
             style={{ marginBottom: "5px", fontSize: "14px", color: "#434343" }}
           >
@@ -262,10 +262,7 @@ function DEX({ chain, customTokens = {
         >
           <ArrowDownOutlined />
         </div>
-        <Card
-          style={{ borderRadius: "0" }}
-          bodyStyle={{ padding: "0.8rem" }}
-        >
+        <Card style={{ borderRadius: "0" }} bodyStyle={{ padding: "0.8rem" }}>
           <div
             style={{ marginBottom: "5px", fontSize: "14px", color: "#434343" }}
           >
