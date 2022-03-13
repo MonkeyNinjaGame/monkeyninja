@@ -42,13 +42,13 @@ const Roadmap = () => {
       </ul>
 
       <h3>February</h3>
-      <ol>
+      <ul className="rmlist">
         <li>Start Game Development</li>
         <li>Coin Gecko Listing</li>
         <li>Launch Monkey Swap/Dex</li>
         <li>Mobile Integration</li>
         <li>Basic Metaverse Socket.io Integration</li>
-      </ol>
+      </ul>
 
       <h3>March</h3>
       <ol>

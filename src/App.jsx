@@ -118,6 +118,13 @@ const App = ({ isServerInfo }) => {
       </div>
       <Layout style={{ height: "100vh" }}>
         <Router>
+          {/*SHURIKEN*/}
+          <div className="fly" id="fly">
+            <img src={star} alt="Throwing Star" className="rotate" />
+          </div>
+          <div className="fly2" id="fly2">
+            <img src={star} alt="Throwing Star" className="rotate2" />
+          </div>
           <ScrollToTop />
           <Header style={styles.header}>
             <Logo

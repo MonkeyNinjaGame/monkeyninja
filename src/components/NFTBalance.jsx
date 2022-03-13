@@ -9,6 +9,7 @@ import {
 import { getExplorer } from "helpers/networks";
 import AddressInput from "./AddressInput";
 import { useVerifyMetadata } from "hooks/useVerifyMetadata";
+import Background from "assets/bg-home-01.png";
 
 const { Meta } = Card;
 
@@ -16,12 +17,12 @@ const styles = {
   NFTs: {
     display: "flex",
     flexWrap: "wrap",
-    WebkitBoxPack: "start",
-    justifyContent: "flex-start",
+    WebkitBoxPack: "center",
+    justifyContent: "center",
     margin: "0 auto",
-    maxWidth: "1000px",
+    //maxWidth: "1000px",
     width: "100%",
-    gap: "10px",
+    gap: "0",
   },
 };
 
@@ -69,14 +70,35 @@ function NFTBalance() {
     setAmount(e.target.value);
   };
 
+  const filterContract = (nftBalances, token_addresses = []) => {
+    if (!token_addresses.length) return nftBalances;
+    return nftBalances.filter((nftBalance) =>
+      token_addresses.includes(nftBalance.token_address),
+    );
+  };
+
   console.log("NFTBalances", NFTBalances);
   return (
-    <div style={{ padding: "15px", maxWidth: "1030px", width: "100%" }}>
-      <h1>🖼 NFT Balances</h1>
+    <div
+      id="inventory"
+      className="inventory"
+      style={{
+        backgroundImage: `url("${Background}")`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+      }}
+    >
+      <h1>Inventory</h1>
       <div style={styles.NFTs}>
         <Skeleton loading={!NFTBalances?.result}>
           {NFTBalances?.result &&
-            NFTBalances.result.map((nft, index) => {
+            filterContract(NFTBalances.result, [
+              //"0xC1ca4047a876066911480D2f9b740BEE0A6D4f3A",
+              //"0x14879BF5da22ddB792f39cC7dC6F0307c7D1CDB1",
+              //"0xf981646d5F52D53bE1Fc2A5C65995C3F012e6450",
+            ]).map((nft, index) => {
               //Verify Metadata
               nft = verifyMetadata(nft);
               return (

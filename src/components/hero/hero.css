@@ -1,62 +1,30 @@
+/*** CONTAINER ***/
 .hero {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100vh;
-  padding: 8rem 6.4rem;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-between;
   background: transparent;
   background-image: url("assets/bg-home-01.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  overflow-y: hidden;
+  overflow: hidden;
+  padding: 6rem;
 }
 
-.hero .inner0 {
-  align-self: center;
-  flex-basis: 50%;
-  padding: 1rem;
-  text-align: center;
-}
-
-.hero .inner1 {
-  align-self: center;
-  width: 60%;
-  padding: 1rem;
-  right: 0;
-  position: absolute;
-}
-
-.hero .inner1.shadow {
-  z-index: 1;
-}
-
-.hero .inner1.shadow img {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.hero .inner1.fire img {
-  width: 85%;
-  margin: 0 auto;
-}
-
-.hero .inner1.ice img {
-  width: 75%;
-  margin: 0 auto;
-}
-
-.hero .inner2 {
+/*** CONTENT ***/
+.hero .content {
   flex-basis: 50%;
   text-align: left;
   padding: 1rem;
   z-index: 2;
 }
 
-.hero .inner2 h1 {
+.hero .content h1 {
   font-size: 7vw;
   font-weight: bold;
   text-transform: uppercase;
@@ -66,7 +34,7 @@
   text-shadow: -2px 0 #222, 0 2px #222, 2px 0 #222, 0 -2px #222;
 }
 
-.hero .inner2 h2 {
+.hero .content h2 {
   font-size: 4vw;
   font-weight: normal;
   color: #b80000;
@@ -74,18 +42,59 @@
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
-.hero .inner2 h3 {
+.hero .content h3 {
   font-size: 1.6vw;
   font-weight: normal;
   color: #fff;
   margin-bottom: 10px;
 }
 
-.hero .inner2 h5 {
+.hero .content h5 {
   font-size: 1.2vw;
   font-weight: normal;
   color: #fff;
   margin-bottom: 0;
+}
+
+/*** NINJAS ***/
+.hero .ninjas {
+  position: relative;
+  overflow: visible !important;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.hero .ninja {
+  flex-basis: 100%;
+  position: absolute;
+  width: 140%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero .ninja.shadow {
+  z-index: 1;
+}
+
+.hero .ninja.shadow img {
+  width: 100%;
+  margin: auto;
+}
+
+.hero .ninja.fire img {
+  width: 80%;
+  margin: auto;
+}
+
+.hero .ninja.ice img {
+  width: 70%;
+  margin: auto;
 }
 
 .hero .anticon svg {
@@ -94,58 +103,55 @@
   color: #ffb148;
 }
 
+/*** 1024 ***/
 @media screen and (max-width: 1024px) {
   .hero {
-    padding: 6rem 4rem 4rem 4rem;
-    flex-wrap: wrap;
-  }
-  .hero .inner2 h1 {
-    font-size: 6.8vw;
-  }
-  .hero .inner2 h2 {
-  }
-  .hero .inner2 h3 {
-  }
-  .hero .inner2 h5 {
+    padding: 4rem;
   }
 }
 
+/*** 767 ***/
 @media screen and (max-width: 767px) {
   .hero {
-    padding: 6rem 1rem 6rem 1rem;
-    flex-direction: column-reverse;
-    align-items: flex-end;
-    justify-content: flex-start;
-  }
-  .hero .inner0 {
-    display: none;
-  }
-  .hero .inner1 {
-    flex-basis: 50%;
-    width: 100%;
+    padding: 4rem 1rem 7rem 1rem;
+    flex-flow: column nowrap;
     align-items: center;
-    padding: 1rem;
-    top: 6rem;
+    justify-content: baseline;
   }
-  .hero .inner2 {
-    flex-basis: 50%;
+  .hero .ninjas {
     width: 100%;
+    max-width: 80%;
+    align-items: baseline;
+    padding: 1rem;
+    top: 0;
+  }
+  .hero .ninja {
+    width: 100%;
+  }
+  .hero .content {
+    display: flex;
+    flex-flow: column wrap;
     text-align: center;
     padding: 1rem;
   }
-  .hero .inner2 h1 {
-    font-size: 13vw;
-  }
-  .hero .inner2 h2 {
+  .hero .content h1 {
     font-size: 8vw;
   }
-  .hero .inner2 h3 {
-    font-size: 4vw;
+  .hero .content h2 {
+    font-size: 6vw;
   }
-  .hero .inner2 h5 {
+  .hero .content h3 {
     font-size: 3vw;
+  }
+  .hero .content h5 {
+    font-size: 2vw;
   }
 }
 
+/*** 480 ***/
 @media screen and (max-width: 480px) {
+  .hero .ninjas {
+    max-width: 100%;
+    top: 0;
+  }
 }

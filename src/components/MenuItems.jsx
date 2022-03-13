@@ -7,7 +7,8 @@ import {
   HomeFilled,
   SlidersFilled,
   CompassFilled,
-  CalculatorFilled /* ShopFilled,*/,
+  CalculatorFilled,
+  //ShopFilled
 } from "@ant-design/icons";
 import TokenPrice from "components/TokenPrice";
 import Account from "components/Account/Account";
@@ -59,6 +60,7 @@ function MenuItems() {
             fontWeight: "500",
             width: "100%",
             justifyContent: "center",
+            textAlign: "center",
             background: "transparent",
             border: "0px",
             textTransform: "uppercase",
@@ -123,6 +125,11 @@ function MenuItems() {
               Chart
             </NavLink>
           </Menu.Item>
+          {/*<Menu.Item key="/nftMarket" className="menuItem" icon={<ShopFilled style={{ color: "#fff" }} />}>
+            <NavLink to="/nftMarket" className="menuItem">
+              Market
+            </NavLink>
+          </Menu.Item>*/}
         </Menu>
       </Modal>
       <div className="menuContain">
@@ -184,6 +191,14 @@ function MenuItems() {
               Chart
             </NavLink>
           </Menu.Item>
+          <Menu.Item style={{ display: "none" }}>
+            <Account />
+          </Menu.Item>
+          {/*<Menu.Item key="/nftMarket" className="menuItem" icon={<ShopFilled style={{ color: "#fff" }} />}>
+            <NavLink to="/nftMarket" className="menuItem">
+              Market
+            </NavLink>
+          </Menu.Item>*/}
           <Tooltip placement="bottom" title={"Okane Price"}>
             <Menu.Item className="tokenPrice">
               <TokenPrice
@@ -194,24 +209,11 @@ function MenuItems() {
               />
             </Menu.Item>
           </Tooltip>
-          <Menu.Item style={{ display: "none" }}>
-            <Account />
-          </Menu.Item>
-          {/*<Menu.Item key="/nftMarket" className="menuItem" icon={<ShopFilled style={{ color: "#fff" }} />}>
-            <NavLink to="/nftMarket" className="menuItem">
-              Market
-            </NavLink>
-          </Menu.Item>*/}
           {/*<Menu.Item key="/dojo" className="menuItem" icon={<UserOutlined style={{ color: "#fff" }} />}>
             <NavLink to="/dojo" className="menuItem">
               Dojo
             </NavLink>
           </Menu.Item>*/}
-          {/*<Menu.Item key="/nftBalance" className="menuItem">
-              <NavLink to="/nftBalance" className="menuItem">
-                My NFTs
-              </NavLink>
-            </Menu.Item>*/}
           {/*<Menu.Item key="/nftTransactions" className="menuItem">
               <NavLink to="/nftTransactions" className="menuItem">
                 Transactions

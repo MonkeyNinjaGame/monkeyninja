@@ -1,13 +1,16 @@
 import { useMoralis } from "react-moralis";
+//import { useLocation } from "react-router";
 //import { getEllipsisTxt } from "helpers/formatters";
 //import Blockie from "../Blockie";
-import { Button, Card, Modal } from "antd";
+//import { NavLink } from "react-router-dom";
+import { Button, Card, Modal/*, Menu, Tooltip*/ } from "antd";
 import { useState } from "react";
 import Address from "../Address/Address";
-import { SelectOutlined, UserOutlined } from "@ant-design/icons";
+import { SelectOutlined, UserOutlined/*, ContainerFilled*/ } from "@ant-design/icons";
 import { getExplorer } from "helpers/networks";
 import Text from "antd/lib/typography/Text";
 import { connectors } from "./config";
+import NativeBalance from "components/NativeBalance";
 
 const styles = {
   account: {
@@ -59,6 +62,7 @@ const styles = {
 };
 
 function Account() {
+  //const { pathname } = useLocation();
   const { authenticate, isAuthenticated, account, chainId, logout } =
     useMoralis();
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -144,6 +148,32 @@ function Account() {
         width="400px"
       >
         <h2>Account</h2>
+        {/*<Menu
+          theme="dark"
+          mode="vertical"
+          overflowedIndicator={""}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            fontSize: "12px",
+            fontWeight: "500",
+            width: "100%",
+            justifyContent: "center",
+            textAlign: "center",
+            background: "transparent",
+            border: "0px",
+            textTransform: "uppercase",
+            marginBottom: "20px",
+          }}
+          defaultSelectedKeys={[pathname]}
+        >
+          <Menu.Item key="/nftBalance" className="menuItem" icon={<ContainerFilled style={{ color: "#fff" }} />}>
+            <NavLink to="/nftBalance" className="menuItem" onClick={() => setIsModalVisible(false)}>
+              Inventory
+            </NavLink>
+          </Menu.Item>
+        </Menu>*/}
+        <NativeBalance />
         <Card
           style={{
             marginTop: "0",

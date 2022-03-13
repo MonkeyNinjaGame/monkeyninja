@@ -109,6 +109,10 @@
   position: fixed;
 }
 
+.ant-modal-mask {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .ant-modal {
   background: #222;
 }
@@ -135,6 +139,7 @@
 .ant-modal-body {
   background: transparent;
   text-align: center;
+  padding-top: 2.5rem !important;
 }
 
 .ant-modal-content h4 {
@@ -203,7 +208,7 @@
 
 .ant-card.ant-card-bordered {
   background: #222;
-  border: 0px solid #222;
+  border: 0px solid #222 !important;
   padding: 10px;
 }
 
@@ -398,6 +403,36 @@ button:hover,
   transform: skew(-20deg);
 }
 
+.ant-modal .nativeBalance {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 12px;
+}
+
+/*** INVENTORY ***/
+.inventory {
+  background: #222;
+  width: 100%;
+  /*min-height: 100vh;*/
+  padding: 8rem 6.4rem;
+  text-align: center;
+}
+
+.inventory p {
+  color: #c0c0c0;
+}
+
+.inventory h2 {
+  font-weight: bold !important;
+  color: #b80000;
+}
+
+.inventory .ant-card {
+  width: 23% !important;
+  margin: 1%;
+}
+
 @media screen and (max-width: 1024px) {
   .ant-menu-item.tokenPrice {
     left: 140px !important;
@@ -408,9 +443,14 @@ button:hover,
   }
   .ant-modal .tokenPrice {
     position: absolute;
-    top: 0;
+    top: 0.3rem;
     left: 1rem;
     font-size: 12px;
+  }
+  .inventory .ant-card {
+    width: 31% !important;
+    margin: 1%;
+    background: #222222 !important;
   }
 }
 
@@ -456,5 +496,21 @@ button:hover,
   }
   .ant-card-body {
     background: transparent;
+  }
+  .inventory .ant-card {
+    width: 48% !important;
+    margin: 1%;
+    background: #222222 !important;
+  }
+  .inventory {
+    padding: 8rem 1rem 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .inventory .ant-card {
+    width: 100% !important;
+    margin: 5px 0;
+    background: #222222 !important;
   }
 }

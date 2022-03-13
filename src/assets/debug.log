@@ -1,0 +1,18 @@
+[0310/220009.500:WARNING:used_ids.h(55)] Duplicate id found. Reassigning from 104 to 127
+[0310/220009.501:WARNING:used_ids.h(55)] Duplicate id found. Reassigning from 102 to 125
+[0310/220009.501:WARNING:used_ids.h(55)] Duplicate id found. Reassigning from 104 to 124
+[0310/220009.501:WARNING:used_ids.h(55)] Duplicate id found. Reassigning from 106 to 123
+[0310/220009.501:WARNING:used_ids.h(55)] Duplicate id found. Reassigning from 110 to 122
+[0310/220009.502:WARNING:used_ids.h(55)] Duplicate id found. Reassigning from 103 to 121
+[0310/220009.502:WARNING:used_ids.h(55)] Duplicate id found. Reassigning from 105 to 120
+[0310/220009.502:WARNING:used_ids.h(55)] Duplicate id found. Reassigning from 111 to 119
+[0310/220009.502:WARNING:used_ids.h(55)] Duplicate id found. Reassigning from 109 to 118
+[0310/220010.844:WARNING:stun_port.cc(450)] Port[15488970:0:1:0:local:Net[any:0:0:0:x:x:x:x:x/0:Wildcard:id=0]]: StunPort: stun host lookup received error 0
+[0310/220011.643:INFO:CONSOLE(1)] "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu", source: https://core-ml-fraud-detection-stage-public.azureedge.net/js/app.7b3adf59.js (1)
+[0310/220011.646:INFO:CONSOLE(1)] "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu", source: https://core-ml-fraud-detection-stage-public.azureedge.net/js/app.7b3adf59.js (1)
+[0310/220011.649:INFO:CONSOLE(1)] "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu", source: https://core-ml-fraud-detection-stage-public.azureedge.net/js/app.7b3adf59.js (1)
+[0310/220011.649:INFO:CONSOLE(1)] "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu", source: https://core-ml-fraud-detection-stage-public.azureedge.net/js/app.7b3adf59.js (1)
+[0310/220011.651:INFO:CONSOLE(1)] "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu", source: https://core-ml-fraud-detection-stage-public.azureedge.net/js/app.7b3adf59.js (1)
+[0310/220538.291:ERROR:ssl_client_socket_impl.cc(962)] handshake failed; returned -1, SSL error code 1, net_error -100
+[0310/233236.054:ERROR:ssl_client_socket_impl.cc(962)] handshake failed; returned -1, SSL error code 1, net_error -100
+[0310/233236.058:ERROR:ssl_client_socket_impl.cc(962)] handshake failed; returned -1, SSL error code 1, net_error -101
