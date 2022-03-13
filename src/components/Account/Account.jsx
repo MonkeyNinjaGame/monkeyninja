@@ -3,10 +3,13 @@ import { useMoralis } from "react-moralis";
 //import { getEllipsisTxt } from "helpers/formatters";
 //import Blockie from "../Blockie";
 //import { NavLink } from "react-router-dom";
-import { Button, Card, Modal/*, Menu, Tooltip*/ } from "antd";
+import { Button, Card, Modal /*, Menu, Tooltip*/ } from "antd";
 import { useState } from "react";
 import Address from "../Address/Address";
-import { SelectOutlined, UserOutlined/*, ContainerFilled*/ } from "@ant-design/icons";
+import {
+  SelectOutlined,
+  UserOutlined /*, ContainerFilled*/,
+} from "@ant-design/icons";
 import { getExplorer } from "helpers/networks";
 import Text from "antd/lib/typography/Text";
 import { connectors } from "./config";

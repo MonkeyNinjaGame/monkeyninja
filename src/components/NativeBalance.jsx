@@ -6,11 +6,7 @@ function NativeBalance(props) {
 
   if (!account || !isAuthenticated) return null;
 
-  return (
-    <div class="nativeBalance">
-      {balance.formatted}
-    </div>
-  );
+  return <div class="nativeBalance">{balance.formatted}</div>;
 }
 
 export default NativeBalance;
