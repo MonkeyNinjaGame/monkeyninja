@@ -3,7 +3,7 @@ import { useMoralis } from "react-moralis";
 //import { getEllipsisTxt } from "helpers/formatters";
 //import Blockie from "../Blockie";
 //import { NavLink } from "react-router-dom";
-import { Button, Card, Modal, Avatar/*, Menu, Tooltip*/ } from "antd";
+import { Button, Card, Modal, Avatar /*, Menu, Tooltip*/ } from "antd";
 import { useState } from "react";
 import Address from "../Address/Address";
 /*import {
@@ -67,7 +67,7 @@ const styles = {
 
 function Account() {
   //const { pathname } = useLocation();
-  const { authenticate, isAuthenticated, account, /*chainId, */logout } =
+  const { authenticate, isAuthenticated, account, /*chainId, */ logout } =
     useMoralis();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isAuthModalVisible, setIsAuthModalVisible] = useState(false);
