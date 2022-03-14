@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.178ea362.chunk.css",
-    "main.js": "/static/js/main.f07fb319.chunk.js",
-    "main.js.map": "/static/js/main.f07fb319.chunk.js.map",
+    "main.css": "/static/css/main.88b6219d.chunk.css",
+    "main.js": "/static/js/main.72ed1167.chunk.js",
+    "main.js.map": "/static/js/main.72ed1167.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5cd1235e.js",
     "runtime-main.js.map": "/static/js/runtime-main.5cd1235e.js.map",
     "static/css/2.04c588a3.chunk.css": "/static/css/2.04c588a3.chunk.css",
@@ -12,7 +12,7 @@
     "service-worker.js": "/service-worker.js",
     "service-worker.js.map": "/service-worker.js.map",
     "static/css/2.04c588a3.chunk.css.map": "/static/css/2.04c588a3.chunk.css.map",
-    "static/css/main.178ea362.chunk.css.map": "/static/css/main.178ea362.chunk.css.map",
+    "static/css/main.88b6219d.chunk.css.map": "/static/css/main.88b6219d.chunk.css.map",
     "static/js/2.ac5cefcb.chunk.js.LICENSE.txt": "/static/js/2.ac5cefcb.chunk.js.LICENSE.txt",
     "static/media/4-2.f5ae07d2.png": "/static/media/4-2.f5ae07d2.png",
     "static/media/5-2.85543665.png": "/static/media/5-2.85543665.png",
@@ -28,11 +28,11 @@
     "static/media/black01.d70be159.png": "/static/media/black01.d70be159.png",
     "static/media/blue01.12103c8d.png": "/static/media/blue01.12103c8d.png",
     "static/media/discord.544df87e.png": "/static/media/discord.544df87e.png",
-    "static/media/fire-head-01.05446bb2.png": "/static/media/fire-head-01.05446bb2.png",
+    "static/media/fire-head-01.5d046879.png": "/static/media/fire-head-01.5d046879.png",
     "static/media/hero-black01.041fc423.png": "/static/media/hero-black01.041fc423.png",
     "static/media/hero-blue01.c9a96b64.png": "/static/media/hero-blue01.c9a96b64.png",
     "static/media/hero-red01.c5a26e97.png": "/static/media/hero-red01.c5a26e97.png",
-    "static/media/ice-head-01.1d7d4f80.png": "/static/media/ice-head-01.1d7d4f80.png",
+    "static/media/ice-head-01.14f7a7f7.png": "/static/media/ice-head-01.14f7a7f7.png",
     "static/media/instagram.2fe1f863.png": "/static/media/instagram.2fe1f863.png",
     "static/media/katana01.94ce1313.png": "/static/media/katana01.94ce1313.png",
     "static/media/katana02.931ed5cb.png": "/static/media/katana02.931ed5cb.png",
@@ -42,7 +42,7 @@
     "static/media/opensea.0825b0d6.png": "/static/media/opensea.0825b0d6.png",
     "static/media/red01.36132e3c.png": "/static/media/red01.36132e3c.png",
     "static/media/reddit.9ec48791.png": "/static/media/reddit.9ec48791.png",
-    "static/media/shadow-head-01.4c328133.png": "/static/media/shadow-head-01.4c328133.png",
+    "static/media/shadow-head-01.d9c7ea7c.png": "/static/media/shadow-head-01.d9c7ea7c.png",
     "static/media/shuriken01.7f30d904.png": "/static/media/shuriken01.7f30d904.png",
     "static/media/shuriken02.47916e08.png": "/static/media/shuriken02.47916e08.png",
     "static/media/star.59bcaa0b.png": "/static/media/star.59bcaa0b.png",
@@ -56,7 +56,7 @@
     "static/js/runtime-main.5cd1235e.js",
     "static/css/2.04c588a3.chunk.css",
     "static/js/2.ac5cefcb.chunk.js",
-    "static/css/main.178ea362.chunk.css",
-    "static/js/main.f07fb319.chunk.js"
+    "static/css/main.88b6219d.chunk.css",
+    "static/js/main.72ed1167.chunk.js"
   ]
 }
