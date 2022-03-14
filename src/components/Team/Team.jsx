@@ -42,7 +42,7 @@ const Team = () => {
   return (
     <>
       <img src={border_top} className="bordertop" alt="" />
-        <div className="team" id="socials">
+      <div className="team" id="socials">
         <div className="inner1">
           <h2>Core Team</h2>
           <p>Our core team are all professionals in their respective fields.</p>
@@ -65,7 +65,7 @@ const Team = () => {
           </div>
         </div>
       </div>
-    <img src={border_bottom} className="borderbottomfoot" alt="" />
+      <img src={border_bottom} className="borderbottomfoot" alt="" />
     </>
   );
 };
