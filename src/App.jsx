@@ -44,7 +44,7 @@ const styles = {
     padding: "0",
     flex: "1 0 0",
     alignItems: "top",
-    background: "#222222",
+    background: "transparent",
   },
   header: {
     position: "absolute",
@@ -116,7 +116,7 @@ const App = ({ isServerInfo }) => {
       <div className="preload">
         <img src={star} className="loader" alt="Loading" />
       </div>
-      <Layout style={{ height: "100vh" }}>
+      <Layout style={{ height: "100vh", background: "transparent" }}>
         <Router>
           {/*SHURIKEN*/}
           <div className="fly" id="fly">
