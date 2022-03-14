@@ -42,6 +42,11 @@
   justify-content: center;
 }
 
+.team .socials {
+  padding: 0 20px;
+}
+
+/*** TORN EDGES ***/
 .team .inner2 .teamwrap {
   flex-basis: 33.333%;
   padding: 1rem;
@@ -49,13 +54,13 @@
 
 .team .inner2 .teamwrap img {
   cursor: pointer;
-  background: #222;
-  border-radius: 25% 0 25% 0;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  background: transparent;
+  border-radius: 0 0 0 0;
 }
 
-.team .socials {
-  padding: 0 20px;
+.team .inner2 .teamwrap h4 {
+  font-family: "Grechen Fuemen", cursive;
+  font-size: 26px;
 }
 
 @media screen and (max-width: 1024px) {
