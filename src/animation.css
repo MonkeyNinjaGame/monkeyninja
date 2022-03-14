@@ -180,7 +180,7 @@
   }
 }
 
-/*** NINJA FADEIN ***/
+/*** NINJA FADEIN 
 .hero .ninjas {
   filter: blur(100px);
   animation: blurin 2s linear 3s forwards;
@@ -193,7 +193,7 @@
   100% {
     -webkit-filter: blur(0px);
   }
-}
+}***/
 
 /*** HEADER POP ***/
 .hero .content {
@@ -249,6 +249,24 @@
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+
+/*** NINJA FLASH ***/
+.about .zoom {
+  filter: blur(100px);
+  width: 40px;
+  animation: zoomin 2s ease-in-out 3s forwards;
+}
+
+@keyframes zoomin {
+  0% {
+    -webkit-filter: blur(100px);
+    width: 40px;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    width: 100%;
   }
 }
 

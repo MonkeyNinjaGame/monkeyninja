@@ -67,7 +67,7 @@ const Tokenomics = () => {
               )
             }
           >
-            View Cart
+            View Chart
           </Button>
         </p>
       </div>

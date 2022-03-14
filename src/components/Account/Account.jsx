@@ -3,17 +3,18 @@ import { useMoralis } from "react-moralis";
 //import { getEllipsisTxt } from "helpers/formatters";
 //import Blockie from "../Blockie";
 //import { NavLink } from "react-router-dom";
-import { Button, Card, Modal /*, Menu, Tooltip*/ } from "antd";
+import { Button, Card, Modal, Avatar/*, Menu, Tooltip*/ } from "antd";
 import { useState } from "react";
 import Address from "../Address/Address";
-import {
+/*import {
   SelectOutlined,
-  UserOutlined /*, ContainerFilled*/,
-} from "@ant-design/icons";
-import { getExplorer } from "helpers/networks";
+  UserOutlined , ContainerFilled,
+} from "@ant-design/icons";*/
+//import { getExplorer } from "helpers/networks";
 import Text from "antd/lib/typography/Text";
 import { connectors } from "./config";
 import NativeBalance from "components/NativeBalance";
+import profile_icon from "../../assets/white01.png";
 
 const styles = {
   account: {
@@ -66,7 +67,7 @@ const styles = {
 
 function Account() {
   //const { pathname } = useLocation();
-  const { authenticate, isAuthenticated, account, chainId, logout } =
+  const { authenticate, isAuthenticated, account, /*chainId, */logout } =
     useMoralis();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isAuthModalVisible, setIsAuthModalVisible] = useState(false);
@@ -136,7 +137,8 @@ function Account() {
           {getEllipsisTxt(account, 4)}
         </p>*/}
         {/*<Blockie currentWallet scale={3} />*/}
-        <UserOutlined />
+        {/*<UserOutlined />*/}
+        <Avatar src={profile_icon} style={{ marginTop: "-12px" }} />
       </div>
       <Modal
         visible={isModalVisible}
@@ -150,7 +152,39 @@ function Account() {
         style={{ fontSize: "16px", fontWeight: "500" }}
         width="400px"
       >
-        <h2>Account</h2>
+        <h2>Wallet</h2>
+        <NativeBalance />
+        <Card
+          style={{
+            marginTop: "-40px",
+            borderRadius: "0rem",
+            border: "0px",
+            background: "transparent",
+            color: "#fff",
+            textAlign: "center",
+            paddingTop: "0",
+          }}
+          bodyStyle={{ padding: "15px" }}
+        >
+          <Address
+            avatar="none"
+            size={6}
+            copyable
+            style={{ fontSize: "14px", color: "#fff" }}
+          />
+          {/*<div style={{ marginTop: "10px", padding: "0 10px" }}>
+            <a
+              href={`${getExplorer(chainId)}/address/${account}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SelectOutlined
+                style={{ marginRight: "15px", width: "16px", height: "16px" }}
+              />
+              View on Explorer
+            </a>
+          </div>*/}
+        </Card>
         {/*<Menu
           theme="dark"
           mode="vertical"
@@ -176,38 +210,6 @@ function Account() {
             </NavLink>
           </Menu.Item>
         </Menu>*/}
-        <NativeBalance />
-        <Card
-          style={{
-            marginTop: "0",
-            borderRadius: "0rem",
-            border: "0px",
-            background: "#222",
-            color: "#fff",
-            textAlign: "center",
-            paddingTop: "0",
-          }}
-          bodyStyle={{ padding: "15px" }}
-        >
-          <Address
-            avatar="none"
-            size={6}
-            copyable
-            style={{ fontSize: "14px", color: "#fff" }}
-          />
-          <div style={{ marginTop: "10px", padding: "0 10px" }}>
-            <a
-              href={`${getExplorer(chainId)}/address/${account}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <SelectOutlined
-                style={{ marginRight: "15px", width: "16px", height: "16px" }}
-              />
-              View on Explorer
-            </a>
-          </div>
-        </Card>
         <Button
           size="large"
           type="primary"

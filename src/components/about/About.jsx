@@ -1,6 +1,7 @@
 import React from "react";
 import about_pic from "../../assets/7-2.png";
 import "./about.css";
+import "../../animation.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
@@ -36,7 +37,7 @@ const About = () => {
       </div>
       <div className="inner2">
         <WhiteNinja />
-        {/*<img src={about_pic} alt="About Monkey Ninja" />*/}
+        {/*<img src={about_pic} alt="About Monkey Ninja" className="zoom" />*/}
       </div>
     </div>
   );
