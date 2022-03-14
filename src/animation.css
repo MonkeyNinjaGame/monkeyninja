@@ -180,7 +180,7 @@
   }
 }
 
-/*** NINJA FADEIN 
+/*** NINJA FADEIN ***/
 .hero .ninjas {
   filter: blur(100px);
   animation: blurin 2s linear 3s forwards;
@@ -193,7 +193,7 @@
   100% {
     -webkit-filter: blur(0px);
   }
-}***/
+}
 
 /*** HEADER POP ***/
 .hero .content {
