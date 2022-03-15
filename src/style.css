@@ -403,6 +403,7 @@ button:hover,
   -ms-transform: skewX(-20deg); /* IE 9 */
   -webkit-transform: skewX(-20deg); /* Safari */
   transform: skew(-20deg);
+  margin-right: 10px;
 }
 
 .ant-modal .nativeBalance {

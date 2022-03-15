@@ -88,9 +88,11 @@
   }
   .team .inner1 {
     flex-basis: 100%;
+    padding: 1rem;
   }
   .team .inner2 {
     flex-direction: column;
+    padding: 1rem;
   }
   .team .inner2 .teamwrap {
     width: 100%;
