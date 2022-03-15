@@ -51,16 +51,19 @@ const Team = () => {
           <div className="teamwrap">
             <Will />
             <h4>Will</h4>
+            <p style={{ marginTop: "-15px" }}>(@CryptoDevWill)</p>
             <p>CEO / Game Dev / Web3 Dev / Design</p>
           </div>
           <div className="teamwrap">
             <Daniel />
             <h4>Daniel</h4>
+            <p style={{ marginTop: "-15px" }}>(@Rogstixs)</p>
             <p>Co-Leader / Web3 Dev / Design</p>
           </div>
           <div className="teamwrap">
             <Nate />
             <h4>Nate</h4>
+            <p style={{ marginTop: "-15px" }}>(@N8TR0N)</p>
             <p>Website / Web3 Dev / Design</p>
           </div>
         </div>
