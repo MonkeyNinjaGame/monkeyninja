@@ -368,7 +368,8 @@ button:hover,
   text-align: center;
   background: #222;
   font-family: "Manrope";
-  padding: 3rem 1rem 3rem 1rem;
+  padding: 8rem 1rem 3rem 1rem;
+  z-index: -2;
 }
 
 .footerinner1 {
@@ -477,7 +478,7 @@ button:hover,
 
 @media screen and (max-width: 767px) {
   .footerMain {
-    padding: 3rem 1rem 6rem 1rem;
+    padding: 8rem 1rem 6rem 1rem;
   }
   .ant-back-top {
     bottom: 60px;

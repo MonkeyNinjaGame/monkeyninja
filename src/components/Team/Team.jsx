@@ -5,8 +5,8 @@ import daniel from "../../assets/ice-head-01.png";
 import "./team.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import border_top from "../../assets/border-top.png";
-import border_bottom from "../../assets/border-bottom.png";
+//import border_top from "../../assets/border-top.png";
+//import border_bottom from "../../assets/border-bottom.png";
 
 const Will = () => (
   <LazyLoadImage
@@ -41,7 +41,7 @@ const Daniel = () => (
 const Team = () => {
   return (
     <>
-      <img src={border_top} className="bordertop" alt="" />
+      {/*<img src={border_top} className="bordertop" alt="" />*/}
       <div className="team" id="socials">
         <div className="inner1">
           <h2>Core Team</h2>
@@ -68,7 +68,7 @@ const Team = () => {
           </div>
         </div>
       </div>
-      <img src={border_bottom} className="borderbottomfoot" alt="" />
+      {/*<img src={border_bottom} className="borderbottomfoot" alt="" />*/}
     </>
   );
 };
