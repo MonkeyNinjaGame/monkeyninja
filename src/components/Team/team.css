@@ -6,7 +6,7 @@
   padding: 8rem 6.4rem;
   display: flex;
   flex-direction: column;
-  background: #b80000;
+  background: #222;
 }
 
 .team .inner1 {
@@ -20,9 +20,10 @@
 
 .team .inner1 h2 {
   padding-bottom: 40px;
-  color: #fff;
+  color: #b80000;
   font-weight: bold;
   text-align: center;
+  /*text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;*/
 }
 
 .team .inner1 p {
@@ -63,6 +64,7 @@
 .team .inner2 .teamwrap h4 {
   font-family: "Grechen Fuemen", cursive;
   font-size: 26px;
+  color: #b80000;
 }
 
 @media screen and (max-width: 1024px) {

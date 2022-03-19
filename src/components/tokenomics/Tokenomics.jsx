@@ -32,7 +32,7 @@ const Tokenomics = () => {
       </div>
       <div className="inner2">
         <h2>Tokenomics</h2>
-        <h3>Okane Coin</h3>
+        <h3>OKANE COIN</h3>
         <h4 style={{ textAlign: "center" }}>
           <b>
             <u>Total Supply</u>

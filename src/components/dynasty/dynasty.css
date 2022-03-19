@@ -1,8 +1,10 @@
+/*** META DYNASTY ***/
+
 .dynasty {
   width: 100%;
   padding: 8rem 6.4rem;
   display: flex;
-  background: #b80000;
+  background: #222;
   flex-wrap: wrap;
   min-height: 100vh;
 }
@@ -24,14 +26,15 @@
 
 .dynasty .inner1 h2 {
   padding-bottom: 40px;
-  color: #fff;
+  color: #b80000;
   font-weight: bold;
   text-align: center;
+  /*text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;*/
 }
 
 .dynasty .inner1 p {
   color: #c0c0c0;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
 }
 .mountain {
@@ -61,6 +64,12 @@
 @media screen and (max-width: 767px) {
   .dynasty {
     padding: 2rem 1rem 2rem 1rem;
+  }
+  .dynasty .inner1 {
+    padding: 1rem;
+  }
+  .dynasty .inner2 {
+    padding: 1rem;
   }
 }
 

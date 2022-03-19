@@ -4,10 +4,10 @@ import { Menu, Modal, Tooltip } from "antd";
 import { NavLink } from "react-router-dom";
 import {
   MenuOutlined,
-  HomeFilled,
-  SlidersFilled,
-  CompassFilled,
-  CalculatorFilled,
+  //HomeFilled,
+  //SlidersFilled,
+  //CompassFilled,
+  //CalculatorFilled,
   //ShopFilled
 } from "@ant-design/icons";
 import TokenPrice from "components/TokenPrice";
@@ -70,7 +70,7 @@ function MenuItems() {
           <Menu.Item
             key="/"
             className="menuItem"
-            icon={<HomeFilled style={{ color: "#fff" }} />}
+            //icon={<HomeFilled style={{ color: "#fff" }} />}
           >
             <NavLink
               to="/"
@@ -83,7 +83,7 @@ function MenuItems() {
           <Menu.Item
             key="/roadmap"
             className="menuItem"
-            icon={<CompassFilled style={{ color: "#fff" }} />}
+            //icon={<CompassFilled style={{ color: "#fff" }} />}
           >
             <NavLink
               to="/roadmap"
@@ -96,7 +96,7 @@ function MenuItems() {
           <Menu.Item
             key="/1inch"
             className="menuItem"
-            icon={<CalculatorFilled style={{ color: "#fff" }} />}
+            //icon={<CalculatorFilled style={{ color: "#fff" }} />}
           >
             <NavLink
               to="/1inch"
@@ -109,7 +109,7 @@ function MenuItems() {
           <Menu.Item
             key=""
             className="menuItem"
-            icon={<SlidersFilled style={{ color: "#fff" }} />}
+            //icon={<SlidersFilled style={{ color: "#fff" }} />}
             onClick={() =>
               window.open(
                 "https://www.dextools.io/app/polygon/pair-explorer/0x5ca5162a426b844b7b0d6e9449c44f01d073b878",
@@ -152,7 +152,7 @@ function MenuItems() {
           <Menu.Item
             key="/"
             className="menuItem"
-            icon={<HomeFilled style={{ color: "#fff" }} />}
+            //icon={<HomeFilled style={{ color: "#fff" }} />}
           >
             <NavLink to="/" className="menuItem">
               Home
@@ -161,7 +161,7 @@ function MenuItems() {
           <Menu.Item
             key="/roadmap"
             className="menuItem"
-            icon={<CompassFilled style={{ color: "#fff" }} />}
+            //icon={<CompassFilled style={{ color: "#fff" }} />}
           >
             <NavLink to="/roadmap" className="menuItem">
               Roadmap
@@ -170,7 +170,7 @@ function MenuItems() {
           <Menu.Item
             key="/1inch"
             className="menuItem"
-            icon={<CalculatorFilled style={{ color: "#fff" }} />}
+            //icon={<CalculatorFilled style={{ color: "#fff" }} />}
           >
             <NavLink to="/1inch" className="menuItem">
               Dex
@@ -179,7 +179,7 @@ function MenuItems() {
           <Menu.Item
             key=""
             className="menuItem"
-            icon={<SlidersFilled style={{ color: "#fff" }} />}
+            //icon={<SlidersFilled style={{ color: "#fff" }} />}
             onClick={() =>
               window.open(
                 "https://www.dextools.io/app/polygon/pair-explorer/0x5ca5162a426b844b7b0d6e9449c44f01d073b878",

@@ -7,11 +7,10 @@
   width: 100%;
   height: 100vh;
   background: transparent;
-  background-image: url("assets/bg-home-01.png");
-  background-position: center;
+  /*background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
   overflow: hidden;
   padding: 6rem;
 }
@@ -39,7 +38,7 @@
   font-weight: normal;
   color: #b80000;
   margin-bottom: 10px;
-  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  /*text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;*/
 }
 
 .hero .content h3 {

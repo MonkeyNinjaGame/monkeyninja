@@ -391,6 +391,7 @@ button:hover,
   color: #b80000;
   margin-bottom: 10px;
   padding-top: 0;
+  /*text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;*/
 }
 
 .footerText a,

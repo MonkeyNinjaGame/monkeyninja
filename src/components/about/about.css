@@ -1,9 +1,11 @@
+/*** WHAT IS MONKEY NINJA ***/
+
 .about {
   width: 100%;
   min-height: 100vh;
   padding: 8rem 6.4rem;
   display: flex;
-  background: #b80000;
+  background: #222;
 }
 
 .about .inner1 {
@@ -22,14 +24,15 @@
 
 .about .inner1 h2 {
   padding-bottom: 40px;
-  color: #fff;
+  color: #b80000;
   font-weight: bold;
   text-align: center;
+  /*text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;*/
 }
 
 .about .inner1 p {
   color: #c0c0c0;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -62,9 +65,11 @@
   }
   .about .inner1 {
     flex-basis: 100%;
+    padding: 1rem;
   }
   .about .inner2 {
     flex-basis: 100%;
+    padding: 1rem;
   }
 }
 

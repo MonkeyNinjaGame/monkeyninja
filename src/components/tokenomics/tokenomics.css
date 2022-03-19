@@ -1,3 +1,5 @@
+/*** TOKENOMICS ***/
+
 .tokenomics {
   width: 100%;
   min-height: 100vh;
@@ -28,7 +30,7 @@
 
 .tokenomics .inner2 h2 {
   padding-bottom: 40px;
-  color: #fff;
+  color: #b80000;
   font-weight: bold;
   text-align: center;
 }
@@ -42,7 +44,7 @@
 
 .tokenomics .inner2 p {
   color: #c0c0c0;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -80,10 +82,15 @@
   .tokenomics .inner1 {
     flex-basis: 100%;
     order: 2;
+    padding: 1rem;
   }
   .tokenomics .inner2 {
     flex-basis: 100%;
     order: 1;
+    padding: 1rem;
+  }
+  .tokenomics .inner2 h3 {
+    font-size: 5vw;
   }
 }
 
