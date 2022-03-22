@@ -38,7 +38,7 @@ const Tokenomics = () => {
             <u>Total Supply</u>
           </b>
           <br />
-          1,000,000,000
+          <span style={{ color: "#f4db73" }}>1,000,000,000</span>
         </h4>
         <h4 style={{ textAlign: "center", wordBreak: "break-all" }}>
           <b>

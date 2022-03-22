@@ -4,8 +4,8 @@ import dynasty_pic from "../../assets/5-2.png";
 import "./dynasty.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import border_top from "../../assets/border-top.png";
-import border_bottom from "../../assets/border-bottom.png";
+//import border_top from "../../assets/border-top.png";
+//import border_bottom from "../../assets/border-bottom.png";
 
 const DynastyImage = () => (
   <LazyLoadImage
@@ -22,7 +22,7 @@ const DynastyImage = () => (
 const Dynasty = () => {
   return (
     <>
-      <img src={border_top} className="bordertop" alt="" />
+      {/*<img src={border_top} className="bordertop" alt="" />*/}
       <div className="dynasty">
         <div className="inner2">
           <DynastyImage />
@@ -46,7 +46,7 @@ const Dynasty = () => {
         </div>
         {/*<img src={star} alt="Throwing Star" className="dynasty-star rotate" />*/}
       </div>
-      <img src={border_bottom} className="borderbottom" alt="" />
+      {/*<img src={border_bottom} className="borderbottom" alt="" />*/}
     </>
   );
 };

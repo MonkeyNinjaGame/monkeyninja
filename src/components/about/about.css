@@ -5,7 +5,11 @@
   min-height: 100vh;
   padding: 8rem 6.4rem;
   display: flex;
-  background: #222;
+  background: transparent;
+  background-image: url("assets/bg-scroll-01.png");
+  background-position: right center;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 .about .inner1 {
@@ -20,6 +24,11 @@
   align-self: center;
   flex-basis: 40%;
   padding: 2rem;
+  text-align: center;
+}
+
+.inner2 img {
+  max-height: 600px;
 }
 
 .about .inner1 h2 {
@@ -27,13 +36,14 @@
   color: #b80000;
   font-weight: bold;
   text-align: center;
-  /*text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;*/
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
 }
 
 .about .inner1 p {
-  color: #c0c0c0;
-  font-weight: normal;
+  color: #fff;
+  font-weight: bold;
   text-align: center;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
 .about-star {
@@ -45,7 +55,7 @@
 
 @media screen and (max-width: 1024px) {
   .about {
-    padding: 8rem 1rem 2rem 1rem;
+    padding: 8rem 1rem 8rem 1rem;
     height: auto;
   }
   .about .inner1 {
@@ -58,9 +68,9 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
   .about {
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 6rem 1rem 6rem 1rem;
     flex-wrap: wrap;
   }
   .about .inner1 {
@@ -73,8 +83,8 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 480px) {
   .about {
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 6rem 1rem 6rem 1rem;
   }
 }

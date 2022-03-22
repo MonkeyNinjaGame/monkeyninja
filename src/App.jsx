@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { Layout /*, Tabs*/ } from "antd";
 import "antd/dist/antd.css";
+import { CaretUpFilled } from "@ant-design/icons";
 import "./style.css";
 import "./animation.css";
 import star from "assets/star.png";
@@ -26,7 +27,7 @@ import Contract from "components/Contract/Contract";
 import Text from "antd/lib/typography/Text";
 import Ramper from "components/Ramper";
 import { Hero, About, Utility, Dynasty, Tokenomics, Team } from "components";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "react-scroll-to-top";
 import SocialSidebar from "./components/SocialSidebar";
 import Roadmap from "components/Roadmap/Roadmap";
 import Dojo from "components/dojo/Dojo";
@@ -125,7 +126,7 @@ const App = ({ isServerInfo }) => {
           <div className="fly2" id="fly2">
             <img src={star} alt="Throwing Star" className="rotate2" />
           </div>
-          <ScrollToTop />
+          <ScrollToTop smooth="true" component={<CaretUpFilled />} top="100" width="10px" height="10px" style={{ width: "30px", height: "30px", padding: "0", background: "#f4db73", color: "#222", borderRadius: "50%", right: "15px", bottom: "15px" }} />
           <Header style={styles.header}>
             <Logo
               style={styles.logoLeft}
