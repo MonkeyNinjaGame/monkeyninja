@@ -126,7 +126,23 @@ const App = ({ isServerInfo }) => {
           <div className="fly2" id="fly2">
             <img src={star} alt="Throwing Star" className="rotate2" />
           </div>
-          <ScrollToTop smooth="true" component={<CaretUpFilled />} top="100" width="10px" height="10px" style={{ width: "30px", height: "30px", padding: "0", background: "#f4db73", color: "#222", borderRadius: "50%", right: "15px", bottom: "15px" }} />
+          <ScrollToTop
+            smooth="true"
+            component={<CaretUpFilled />}
+            top="100"
+            width="10px"
+            height="10px"
+            style={{
+              width: "30px",
+              height: "30px",
+              padding: "0",
+              background: "#f4db73",
+              color: "#222",
+              borderRadius: "50%",
+              right: "15px",
+              bottom: "15px",
+            }}
+          />
           <Header style={styles.header}>
             <Logo
               style={styles.logoLeft}
