@@ -527,6 +527,9 @@ button:hover,
   .inventory {
     padding: 8rem 1rem 4rem;
   }
+  .styles_scroll-to-top__2A70v {
+    bottom: 60px !important;
+  }
 }
 
 @media screen and (max-width: 480px) {

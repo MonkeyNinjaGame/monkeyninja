@@ -14,7 +14,7 @@ import Address from "../Address/Address";
 import Text from "antd/lib/typography/Text";
 import { connectors } from "./config";
 import NativeBalance from "components/NativeBalance";
-import profile_icon from "../../assets/profile-01.png";
+import profile_icon from "../../assets/profile-02.png";
 
 const styles = {
   account: {
