@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.98f104f6.chunk.css",
-    "main.js": "/static/js/main.040f5161.chunk.js",
-    "main.js.map": "/static/js/main.040f5161.chunk.js.map",
+    "main.js": "/static/js/main.a730cdcd.chunk.js",
+    "main.js.map": "/static/js/main.a730cdcd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5cd1235e.js",
     "runtime-main.js.map": "/static/js/runtime-main.5cd1235e.js.map",
     "static/css/2.04c588a3.chunk.css": "/static/css/2.04c588a3.chunk.css",
@@ -29,11 +29,11 @@
     "static/media/black01.d70be159.png": "/static/media/black01.d70be159.png",
     "static/media/blue01.12103c8d.png": "/static/media/blue01.12103c8d.png",
     "static/media/discord.544df87e.png": "/static/media/discord.544df87e.png",
-    "static/media/fire-head-01.900bf554.png": "/static/media/fire-head-01.900bf554.png",
+    "static/media/fire-head-01.fc1d030d.png": "/static/media/fire-head-01.fc1d030d.png",
     "static/media/hero-black01.041fc423.png": "/static/media/hero-black01.041fc423.png",
     "static/media/hero-blue01.c9a96b64.png": "/static/media/hero-blue01.c9a96b64.png",
     "static/media/hero-red01.c5a26e97.png": "/static/media/hero-red01.c5a26e97.png",
-    "static/media/ice-head-01.489ce67f.png": "/static/media/ice-head-01.489ce67f.png",
+    "static/media/ice-head-01.5e0e30e7.png": "/static/media/ice-head-01.5e0e30e7.png",
     "static/media/instagram.2fe1f863.png": "/static/media/instagram.2fe1f863.png",
     "static/media/katana01.94ce1313.png": "/static/media/katana01.94ce1313.png",
     "static/media/katana02.c09fcc9a.png": "/static/media/katana02.c09fcc9a.png",
@@ -41,10 +41,10 @@
     "static/media/kunai02.a957c85f.png": "/static/media/kunai02.a957c85f.png",
     "static/media/logo.75c48121.png": "/static/media/logo.75c48121.png",
     "static/media/opensea.0825b0d6.png": "/static/media/opensea.0825b0d6.png",
-    "static/media/profile-01.93c494e1.png": "/static/media/profile-01.93c494e1.png",
+    "static/media/profile-01.3f5f1298.png": "/static/media/profile-01.3f5f1298.png",
     "static/media/red01.36132e3c.png": "/static/media/red01.36132e3c.png",
     "static/media/reddit.9ec48791.png": "/static/media/reddit.9ec48791.png",
-    "static/media/shadow-head-01.415c98c0.png": "/static/media/shadow-head-01.415c98c0.png",
+    "static/media/shadow-head-01.f67afda8.png": "/static/media/shadow-head-01.f67afda8.png",
     "static/media/shuriken01.7f30d904.png": "/static/media/shuriken01.7f30d904.png",
     "static/media/shuriken02.47916e08.png": "/static/media/shuriken02.47916e08.png",
     "static/media/star.59bcaa0b.png": "/static/media/star.59bcaa0b.png",
@@ -59,6 +59,6 @@
     "static/css/2.04c588a3.chunk.css",
     "static/js/2.2b78f914.chunk.js",
     "static/css/main.98f104f6.chunk.css",
-    "static/js/main.040f5161.chunk.js"
+    "static/js/main.a730cdcd.chunk.js"
   ]
 }
