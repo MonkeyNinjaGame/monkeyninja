@@ -21,7 +21,11 @@ const Mint = () => {
     >
       <h3>Monkey Ninja</h3>
       <h1>NFT Mint</h1>
-      <img src={shinobi} alt="White Shinobi" style={{ margin: "0 auto 20px", maxWidth: "240px" }} />
+      <img
+        src={shinobi}
+        alt="White Shinobi"
+        style={{ margin: "0 auto 20px", maxWidth: "240px" }}
+      />
       <button>Mint Now</button>
     </div>
   );

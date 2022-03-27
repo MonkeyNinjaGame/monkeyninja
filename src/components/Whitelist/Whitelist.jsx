@@ -20,8 +20,11 @@ const Whitelist = () => {
     >
       <h3>Get On The</h3>
       <h1>Whitelist</h1>
-      <h4>Spots Filled: 50/300<br />
-      Time Left: 720:00:00</h4>
+      <h4>
+        Spots Filled: 50/300
+        <br />
+        Time Left: 720:00:00
+      </h4>
       {/*<p>There acurrently no whitelist spots available.</p>*/}
       <h2>Signup</h2>
     </div>
