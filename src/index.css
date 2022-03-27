@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Contrail+One&family=Grechen+Fuemen&family=Kaushan+Script&family=Pompiere&family=Sriracha&family=Tillana&family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
 
 /* COLORS */
 /* Red: #b80000 */
@@ -69,6 +70,7 @@ p {
   line-height: 1.6;
   padding-bottom: 20px;
   font-size: 16px;
+  font-family: Helvetica, sans-serif;
 }
 
 a {
@@ -102,8 +104,8 @@ select {
 h1 {
   font-size: 70px;
   color: #ffffff;
-  font-family: "Archivo Black", sans-serif;
-  text-transform: capitalize;
+  font-family: "Bakbak One", cursive;
+  text-transform: uppercase;
   padding: 0 0 20px;
 }
 
@@ -122,20 +124,24 @@ h2 {
 h3 {
   font-size: 30px;
   color: #fff;
-  font-family: "Manrope";
+  font-family: "Bakbak One", cursive;
+  text-transform: uppercase;
+  font-weight: bold;
   padding: 0 0 10px;
 }
 
 h4 {
   font-size: 20px;
   color: #fff;
-  font-family: "Manrope";
+  font-family: "Bakbak One", cursive;
+  text-transform: uppercase;
   padding: 10px 0;
 }
 
 h5 {
   color: #fff;
-  font-family: "Manrope";
+  font-family: "Bakbak One", cursive;
+  text-transform: uppercase;
 }
 
 h1,

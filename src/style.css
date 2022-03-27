@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
 
 /* COLORS */
 /* Red: #b80000 */
@@ -115,6 +115,7 @@
 
 .ant-modal {
   background: #222;
+  padding: 0 !important;
 }
 
 .ant-modal-header {
@@ -367,7 +368,8 @@ button:hover,
 .footerMain {
   text-align: center;
   background: #222;
-  font-family: "Manrope";
+  font-family: "Bakbak One", cursive;
+  /*text-transform: uppercase;*/
   padding: 8rem 1rem 3rem 1rem;
   z-index: -2;
 }
@@ -388,7 +390,6 @@ button:hover,
 
 .footerText h2 {
   font-size: 2rem;
-  font-weight: normal;
   color: #b80000;
   margin-bottom: 10px;
   padding-top: 0;

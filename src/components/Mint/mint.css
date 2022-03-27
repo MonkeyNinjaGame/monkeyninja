@@ -1,0 +1,42 @@
+.mint {
+  background: #222;
+  width: 100%;
+  min-height: 90vh;
+  padding: 8rem 6.4rem;
+  text-align: center;
+  /*background: url("../../assets/bg-01.png");
+  background-attachment: fixed;
+  background-size: cover;*/
+}
+
+.mint p {
+  color: #c0c0c0;
+}
+
+.mint h3 {
+  padding-bottom: 0;
+}
+
+.mint h2 {
+  font-weight: bold !important;
+  color: #b80000;
+}
+
+.mint h4 {
+  background: #b80000;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .mint {
+    padding: 8rem 1rem 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mint {
+    padding: 8rem 1rem 4rem;
+  }
+}

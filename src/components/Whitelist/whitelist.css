@@ -1,0 +1,45 @@
+.whitelist {
+  background: #222;
+  width: 100%;
+  min-height: 90vh;
+  padding: 8rem 6.4rem;
+  text-align: center;
+  /*background: url("../../assets/bg-01.png");
+  background-attachment: fixed;
+  background-size: cover;*/
+}
+
+.whitelist p {
+  color: #c0c0c0;
+}
+
+.whitelist h3 {
+  padding-bottom: 0;
+}
+
+.whitelist h2 {
+  font-weight: bold !important;
+  color: #b80000;
+}
+
+.whitelist h4 {
+  background: #222222;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  color: #f4db73;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .whitelist {
+    padding: 8rem 1rem 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .whitelist {
+    padding: 8rem 1rem 4rem;
+  }
+}

@@ -81,6 +81,30 @@ function MenuItems() {
             </NavLink>
           </Menu.Item>
           <Menu.Item
+            key="/whitelist"
+            className="menuItem"
+          >
+            <NavLink
+              to="/whitelist"
+              className="menuItem"
+              onClick={() => setIsModalVisible(false)}
+            >
+              Whitelist
+            </NavLink>
+          </Menu.Item>
+          <Menu.Item
+            key="/mint"
+            className="menuItem"
+          >
+            <NavLink
+              to="/mint"
+              className="menuItem"
+              onClick={() => setIsModalVisible(false)}
+            >
+              Mint
+            </NavLink>
+          </Menu.Item>
+          <Menu.Item
             key="/roadmap"
             className="menuItem"
             //icon={<CompassFilled style={{ color: "#fff" }} />}
@@ -156,6 +180,24 @@ function MenuItems() {
           >
             <NavLink to="/" className="menuItem">
               Home
+            </NavLink>
+          </Menu.Item>
+          <Menu.Item
+            key="/whitelist"
+            className="menuItem"
+            //icon={<CompassFilled style={{ color: "#fff" }} />}
+          >
+            <NavLink to="/whitelist" className="menuItem">
+              Whitelist
+            </NavLink>
+          </Menu.Item>
+          <Menu.Item
+            key="/mint"
+            className="menuItem"
+            //icon={<CompassFilled style={{ color: "#fff" }} />}
+          >
+            <NavLink to="/mint" className="menuItem">
+              Mint
             </NavLink>
           </Menu.Item>
           <Menu.Item

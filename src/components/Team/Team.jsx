@@ -50,19 +50,19 @@ const Team = () => {
         <div className="inner2">
           <div className="teamwrap">
             <Will />
-            <h4>Will</h4>
+            <h3>Will</h3>
             <p style={{ marginTop: "-15px" }}>(@CryptoDevWill)</p>
             <p>CEO / Game Dev / Web3 Dev / Design</p>
           </div>
           <div className="teamwrap">
             <Daniel />
-            <h4>Daniel</h4>
+            <h3>Daniel</h3>
             <p style={{ marginTop: "-15px" }}>(@Rogstixs)</p>
             <p>Co-Leader / Web3 Dev / Design</p>
           </div>
           <div className="teamwrap">
             <Nate />
-            <h4>Nate</h4>
+            <h3>Nate</h3>
             <p style={{ marginTop: "-15px" }}>(@N8TR0N)</p>
             <p>Website / Web3 Dev / Design</p>
           </div>

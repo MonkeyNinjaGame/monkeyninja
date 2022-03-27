@@ -31,6 +31,8 @@ import ScrollToTop from "react-scroll-to-top";
 import SocialSidebar from "./components/SocialSidebar";
 import Roadmap from "components/Roadmap/Roadmap";
 import Dojo from "components/dojo/Dojo";
+import Whitelist from "components/Whitelist/Whitelist";
+import Mint from "components/Mint/Mint";
 
 const { Header, Footer } = Layout;
 
@@ -181,6 +183,12 @@ const App = ({ isServerInfo }) => {
               </Route>
               <Route path="/roadmap">
                 <Roadmap />
+              </Route>
+              <Route path="/whitelist">
+                <Whitelist />
+              </Route>
+              <Route path="/mint">
+                <Mint />
               </Route>
               <Route path="/dojo">
                 <Dojo />
