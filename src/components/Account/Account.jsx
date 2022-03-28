@@ -42,7 +42,6 @@ const styles = {
     marginLeft: "0",
     whiteSpace: "nowrap",
     fontSize: "12px",
-    fontFamily: "Manrope",
     //borderRadius: "20px 0 20px 0",
   },
   connector: {
