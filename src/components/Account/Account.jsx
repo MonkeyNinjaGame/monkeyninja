@@ -35,14 +35,12 @@ const styles = {
   },
   unauth: {
     color: "#fff",
-    background: "#ffb148",
     cursor: "pointer",
     padding: "8px",
     marginRight: "0",
     marginLeft: "0",
     whiteSpace: "nowrap",
     fontSize: "12px",
-    //borderRadius: "20px 0 20px 0",
   },
   connector: {
     alignItems: "center",

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 /* COLORS */
 /* Red: #b80000 */
@@ -114,8 +115,10 @@
 }
 
 .ant-modal {
-  background: #222;
+  background: rgba(34, 34, 34, 0.88);
+  border: 2px solid #c4c4c4;
   padding: 0 !important;
+  border-radius: 5px;
 }
 
 .ant-modal-header {
@@ -148,8 +151,8 @@
 }
 
 .ant-modal-close:hover {
-  background: #222;
-  color: #f4db73;
+  background: transparent;
+  border: 0;
 }
 
 .ant-modal h2 {
@@ -295,25 +298,23 @@ a {
   padding: 10px 20px;
   margin: 5px 0 !important;
   font-size: 20px;
-  border-radius: 0px;
-  color: #000000d9;
-  border-color: #d9d9d9;
-  background: #fff;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background: rgba(255, 177, 72, 0.1);
 }
 
 button,
 .ant-btn.ant-btn-primary {
   padding: 10px 20px;
-  background: #ffb148;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background: rgba(255, 177, 72, 0.1);
   color: #fff;
   text-transform: uppercase;
-  border: 0;
   cursor: pointer;
   color: #fff;
-  border-color: none;
   text-shadow: none;
   box-shadow: none;
-  border-radius: 0;
   font-size: 16px;
   font-weight: normal;
   line-height: unset !important;
@@ -321,7 +322,8 @@ button,
 
 button:hover,
 .ant-btn.ant-btn-primary:hover {
-  background: #f4db73;
+  border: 1px solid #ffffff;
+  background: rgba(255, 177, 72, 0.4);
 }
 
 .ant-input {
@@ -407,6 +409,15 @@ button:hover,
   -webkit-transform: skewX(-20deg); /* Safari */
   transform: skew(-20deg);
   margin-right: 10px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background: rgba(255, 177, 72, 0.1);
+}
+
+.skew:hover {
+  background: rgba(255, 177, 72, 0.4);
+  border: 1px solid #ffffff;
 }
 
 .ant-modal .nativeBalance {
@@ -500,7 +511,7 @@ button:hover,
     top: 0;
     padding: 0.5rem;
     font-size: 16px;
-    background: rgba(34, 34, 34, 0.98);
+    background: rgba(34, 34, 34, 0.88);
   }
   .ant-modal-content {
     height: 100vh;

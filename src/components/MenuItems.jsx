@@ -80,7 +80,7 @@ function MenuItems() {
               Home
             </NavLink>
           </Menu.Item>
-          {/*<Menu.Item key="/whitelist" className="menuItem">
+          <Menu.Item key="/whitelist" className="menuItem">
             <NavLink
               to="/whitelist"
               className="menuItem"
@@ -89,7 +89,7 @@ function MenuItems() {
               Whitelist
             </NavLink>
           </Menu.Item>
-          <Menu.Item key="/mint" className="menuItem">
+          {/*<Menu.Item key="/mint" className="menuItem">
             <NavLink
               to="/mint"
               className="menuItem"
@@ -176,7 +176,7 @@ function MenuItems() {
               Home
             </NavLink>
           </Menu.Item>
-          {/*<Menu.Item
+          <Menu.Item
             key="/whitelist"
             className="menuItem"
             //icon={<CompassFilled style={{ color: "#fff" }} />}
@@ -185,7 +185,7 @@ function MenuItems() {
               Whitelist
             </NavLink>
           </Menu.Item>
-          <Menu.Item
+          {/*<Menu.Item
             key="/mint"
             className="menuItem"
             //icon={<CompassFilled style={{ color: "#fff" }} />}

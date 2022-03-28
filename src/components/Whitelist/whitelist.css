@@ -1,12 +1,47 @@
 .whitelist {
   background: #222;
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   padding: 8rem 6.4rem;
   text-align: center;
-  /*background: url("../../assets/bg-01.png");
-  background-attachment: fixed;
-  background-size: cover;*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.whitelist .headers {
+  width: 100%;
+  z-index: 2;
+}
+
+.whitelist .inner-left,
+.whitelist .inner-right {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.whitelist .inner-left {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background: rgba(34, 34, 34, 0.6);
+  /*background-image: url("assets/bg-scroll-01.png");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;*/
+  width: 100%;
+  min-height: 200px;
+  max-width: 500px;
+}
+
+.whitelist .inner-right {
+  flex-direction: row;
 }
 
 .whitelist p {
@@ -28,26 +63,87 @@
   padding: 5px 10px;
   margin-bottom: 15px;
   text-transform: capitalize;
-  border-radius: 10px;
 }
 
 .whitelist h4 span {
   color: #f4db73;
 }
 
+.whitelist h5 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
 /*** TIMER ***/
-.timer {
-  color: #f4db73;
+.whitelist .info-board span {
+  font-size: 50px;
+}
+
+.whitelist .info-board {
+  margin-bottom: 0;
+}
+
+/*** NINJAS ***/
+.whitelist .ninjas {
+  position: absolute !important;
+  overflow: visible !important;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.whitelist .ninjas .ninja {
+  position: unset !important;
+  overflow: visible !important;
+}
+
+.whitelist .ninjas .ninja.ice {
+  left: 80px;
+  top: 40%;
+  max-width: 400px;
+  position: absolute !important;
+}
+
+.whitelist .ninjas .ninja.fire {
+  right: 80px;
+  top: 20%;
+  max-width: 300px;
+  position: absolute !important;
+}
+
+.whitelist .inner-right .btn-spacer {
+  width: 20px;
 }
 
 @media screen and (max-width: 767px) {
   .whitelist {
     padding: 8rem 1rem 4rem;
   }
+  .whitelist .info-board span {
+    font-size: 36px;
+  }
+  .whitelist .ninjas .ninja.ice {
+    left: 40px;
+    top: 60%;
+    max-width: 200px;
+  }
+
+  .whitelist .ninjas .ninja.fire {
+    right: 40px;
+    top: 20%;
+    max-width: 100px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .whitelist {
     padding: 8rem 1rem 4rem;
+  }
+  .whitelist .inner-right {
+    flex-direction: column;
+  }
+  .whitelist .inner-right .btn-spacer {
+    display: none;
   }
 }
