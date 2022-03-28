@@ -13,7 +13,13 @@ import fire from "../../assets/red01.png";
 //import { ClockCircleOutlined } from '@ant-design/icons';
 import Countdown from "react-countdown";
 
-const Timeup = () => <span>Our first whitelist has officially ended!<br />Please purchase from our official OpenSea.</span>;
+const Timeup = () => (
+  <span>
+    Our first whitelist has officially ended!
+    <br />
+    Please purchase from our official OpenSea.
+  </span>
+);
 
 const formatTime = (time) => {
   return String(time).padStart(2, "0");
@@ -62,7 +68,11 @@ const Whitelist = () => {
       }}
     >
       <MouseParallaxContainer className="ninjas">
-        <MouseParallaxChild factorX={-0.05} factorY={-0.07} className="ninja fire">
+        <MouseParallaxChild
+          factorX={-0.05}
+          factorY={-0.07}
+          className="ninja fire"
+        >
           <img src={fire} alt="Fire Monkey" />
         </MouseParallaxChild>
         <MouseParallaxChild factorX={0.07} factorY={0.09} className="ninja ice">
@@ -72,7 +82,10 @@ const Whitelist = () => {
       <div className="headers">
         <h5>Get On The</h5>
         <h1>Whitelist</h1>
-        <p>You must be a part of our Discord community to be considered for a Whitelist spot.</p>
+        <p>
+          You must be a part of our Discord community to be considered for a
+          Whitelist spot.
+        </p>
       </div>
       <div className="inner-left">
         <Countdown
@@ -88,12 +101,7 @@ const Whitelist = () => {
         <Button
           type="primary"
           style={{ padding: "10px 20px", fontWeight: "bold" }}
-          onClick={() =>
-            window.open(
-              "https://discord.gg/hd2uhfQWCH",
-              "_blank",
-            )
-          }
+          onClick={() => window.open("https://discord.gg/hd2uhfQWCH", "_blank")}
         >
           Join Discord
         </Button>
@@ -102,10 +110,7 @@ const Whitelist = () => {
           type="primary"
           style={{ padding: "10px 20px", fontWeight: "bold" }}
           onClick={() =>
-            window.open(
-              "https://opensea.io/collection/monkey-ninjas",
-              "_blank",
-            )
+            window.open("https://opensea.io/collection/monkey-ninjas", "_blank")
           }
         >
           Visit OpenSea
