@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 
 /* COLORS */
 /* Red: #b80000 */
@@ -115,10 +116,8 @@
 }
 
 .ant-modal {
-  background: rgba(34, 34, 34, 0.88);
-  border: 2px solid #c4c4c4;
+  background: rgba(34, 34, 34, 0.9);
   padding: 0 !important;
-  border-radius: 5px;
 }
 
 .ant-modal-header {
@@ -143,11 +142,16 @@
 .ant-modal-body {
   background: transparent;
   text-align: center;
-  padding-top: 2.5rem !important;
+  padding-top: 3rem !important;
+  padding-bottom: 1.2rem !important;
 }
 
 .ant-modal-content h4 {
   padding-bottom: 0;
+}
+
+.ant-modal-close {
+  padding-top: 10px;
 }
 
 .ant-modal-close:hover {
@@ -159,6 +163,21 @@
   color: #b80000;
   margin-bottom: 15px;
   font-size: 2.4rem;
+}
+
+.panel,
+.panel-last {
+  background: rgba(34, 34, 34, 0.9);
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  z-index: 1;
+  padding: 2rem 1rem 0;
+  margin-bottom: 30px;
+}
+
+.panel-last {
+  margin-bottom: 0 !important;
 }
 
 .ant-tabs {
@@ -300,7 +319,7 @@ a {
   font-size: 20px;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
-  background: rgba(255, 177, 72, 0.1);
+  background: rgba(184, 0, 0, 0.4);
 }
 
 button,
@@ -308,7 +327,7 @@ button,
   padding: 10px 20px;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
-  background: rgba(255, 177, 72, 0.1);
+  background: rgba(184, 0, 0, 0.4);
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
@@ -323,7 +342,7 @@ button,
 button:hover,
 .ant-btn.ant-btn-primary:hover {
   border: 1px solid #ffffff;
-  background: rgba(255, 177, 72, 0.4);
+  background: rgba(184, 0, 0, 0.6);
 }
 
 .ant-input {
@@ -422,7 +441,7 @@ button:hover,
 
 .ant-modal .nativeBalance {
   position: absolute;
-  top: 1rem;
+  top: 1.7rem;
   left: 1rem;
   font-size: 12px;
 }
@@ -477,7 +496,7 @@ button:hover,
   }
   .ant-modal .tokenPrice {
     position: absolute;
-    top: 0.3rem;
+    top: 0.7rem;
     left: 1rem;
     font-size: 12px;
   }
@@ -511,7 +530,7 @@ button:hover,
     top: 0;
     padding: 0.5rem;
     font-size: 16px;
-    background: rgba(34, 34, 34, 0.88);
+    background: rgba(34, 34, 34, 0.9);
   }
   .ant-modal-content {
     height: 100vh;

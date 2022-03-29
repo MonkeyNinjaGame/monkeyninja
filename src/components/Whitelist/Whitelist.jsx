@@ -14,11 +14,16 @@ import fire from "../../assets/red01.png";
 import Countdown from "react-countdown";
 
 const Timeup = () => (
-  <span>
-    Our first whitelist has officially ended!
-    <br />
-    Please purchase from our official OpenSea.
-  </span>
+  <>
+    <span className="light-closed">.</span>
+    <span>
+      Our first Whitelist has officially ended!
+      <br />
+      Please join us on Discord for future Whitelist opportunities.
+      <br />
+      You can also purchase from our official OpenSea.
+    </span>
+  </>
 );
 
 const formatTime = (time) => {
@@ -37,18 +42,14 @@ const renderleft = ({ days, hours, minutes, seconds, completed }) => {
     // Render a countdown
     return (
       <>
-        <h4 className="info-board">
-          Spots Filled
-          <br />
-          <span>0/1000</span>
-          <br />
-          Time Left
-          <br />
-          <span>
-            {formatDate(days)}:{formatTime(hours)}:{formatTime(minutes)}:
-            {formatTime(seconds)}
-          </span>
-        </h4>
+        <span className="light-opened">.</span>
+        <h4 className="data-title">Spots Filled</h4>
+        <span className="data">0/1000</span>
+        <h4 className="data-title">Time Left</h4>
+        <span className="data">
+          {formatDate(days)}:{formatTime(hours)}:{formatTime(minutes)}:
+          {formatTime(seconds)}
+        </span>
       </>
     );
   }
@@ -82,10 +83,10 @@ const Whitelist = () => {
       <div className="headers">
         <h5>Get On The</h5>
         <h1>Whitelist</h1>
-        <p>
+        <h6>
           You must be a part of our Discord community to be considered for a
           Whitelist spot.
-        </p>
+        </h6>
       </div>
       <div className="inner-left">
         <Countdown
@@ -103,7 +104,7 @@ const Whitelist = () => {
           style={{ padding: "10px 20px", fontWeight: "bold" }}
           onClick={() => window.open("https://discord.gg/hd2uhfQWCH", "_blank")}
         >
-          Join Discord
+          Discord
         </Button>
         <span className="btn-spacer"></span>
         <Button
@@ -113,7 +114,7 @@ const Whitelist = () => {
             window.open("https://opensea.io/collection/monkey-ninjas", "_blank")
           }
         >
-          Visit OpenSea
+          OpenSea
         </Button>
       </div>
     </div>

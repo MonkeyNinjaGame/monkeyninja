@@ -181,7 +181,9 @@
 }
 
 /*** NINJA FADEIN ***/
-.hero .ninjas {
+.hero .ninjas,
+.whitelist .ninjas,
+.roadmap .ninjas {
   filter: blur(100px);
   animation: blurin 2s linear 3s forwards;
 }

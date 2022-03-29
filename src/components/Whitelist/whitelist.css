@@ -18,7 +18,7 @@
 
 .whitelist .inner-left,
 .whitelist .inner-right {
-  padding: 2rem;
+  padding: 2rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,14 +30,15 @@
 .whitelist .inner-left {
   border: 1px solid #ffffff;
   border-radius: 5px;
-  background: rgba(34, 34, 34, 0.6);
+  background: rgba(34, 34, 34, 0.9);
   /*background-image: url("assets/bg-scroll-01.png");
   background-position: center center;
   background-size: cover;
   background-attachment: scroll;*/
   width: 100%;
   min-height: 200px;
-  max-width: 500px;
+  max-width: 600px;
+  position: relative;
 }
 
 .whitelist .inner-right {
@@ -65,28 +66,45 @@
   text-transform: capitalize;
 }
 
-.whitelist h4 span {
-  color: #f4db73;
-}
-
 .whitelist h5 {
   padding-bottom: 0;
   margin-bottom: 0;
   font-size: 20px;
 }
 
-/*** TIMER ***/
-.whitelist .info-board span {
-  font-size: 50px;
+/*** INFO BOARD ***/
+.whitelist .data-title {
+  margin-bottom: 0;
+  /*text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;*/
+  text-decoration: underline;
 }
 
-.whitelist .info-board {
-  margin-bottom: 0;
+.whitelist .data {
+  font-size: 50px;
+  color: #c0c0c0;
+  font-weight: normal;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.whitelist .inner-left .light-opened,
+.whitelist .inner-left .light-closed {
+  font-size: 100px;
+  position: absolute;
+  top: -70px;
+  right: 8px;
+}
+
+.whitelist .inner-left .light-opened {
+  color: green;
+}
+
+.whitelist .inner-left .light-closed {
+  color: red;
 }
 
 /*** NINJAS ***/
 .whitelist .ninjas {
-  position: absolute !important;
+  position: fixed !important;
   overflow: visible !important;
   top: 0;
   width: 100%;
@@ -124,13 +142,13 @@
     font-size: 36px;
   }
   .whitelist .ninjas .ninja.ice {
-    left: 40px;
-    top: 60%;
-    max-width: 200px;
+    left: 20px;
+    top: 25%;
+    max-width: 160px;
   }
 
   .whitelist .ninjas .ninja.fire {
-    right: 40px;
+    right: 20px;
     top: 20%;
     max-width: 100px;
   }
@@ -139,11 +157,5 @@
 @media screen and (max-width: 480px) {
   .whitelist {
     padding: 8rem 1rem 4rem;
-  }
-  .whitelist .inner-right {
-    flex-direction: column;
-  }
-  .whitelist .inner-right .btn-spacer {
-    display: none;
   }
 }

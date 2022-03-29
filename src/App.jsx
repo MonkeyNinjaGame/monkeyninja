@@ -138,9 +138,10 @@ const App = ({ isServerInfo }) => {
               width: "30px",
               height: "30px",
               padding: "0",
-              background: "#f4db73",
-              color: "#222",
-              borderRadius: "50%",
+              border: "1px solid #c4c4c4",
+              background: "rgba(184, 0, 0, 0.4)",
+              color: "#fff",
+              borderRadius: "5px",
               right: "15px",
               bottom: "15px",
             }}

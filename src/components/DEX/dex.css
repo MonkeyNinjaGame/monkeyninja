@@ -1,27 +1,35 @@
 .dex {
+  background: transparent;
   width: 100%;
   min-height: 100vh;
   padding: 8rem 6.4rem;
   text-align: center;
-  background: transparent;
-  background-image: url("assets/bg-home-01.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: baseline;
 }
 
 .dex p {
   color: #c0c0c0;
+  z-index: 1;
 }
 
 .dex a {
   color: #f4db73;
+  z-index: 1;
 }
 
 .dex h2 {
   font-weight: bold !important;
   color: #b80000;
+  z-index: 1;
+}
+
+.dex h3,
+.dex h1 {
+  z-index: 1;
 }
 
 /*.dex img {
@@ -34,27 +42,74 @@
   width: 100%;
   padding: 20px;
   margin: 0 auto;
+  z-index: 1 !important;
 }
 
 .dex li {
   color: #c0c0c0;
   line-height: 1.4em;
+  z-index: 1;
+}
+
+.dex ol {
+  z-index: 1;
 }
 
 .rmlist {
   list-style: none !important;
   margin-bottom: 1rem !important;
+  z-index: 1;
 }
 
 .rmlist li:before {
   content: "✓";
   color: #b80000;
   margin-right: 5px;
+  z-index: 1;
+}
+
+/*** NINJAS ***/
+.dex .ninjas {
+  position: fixed !important;
+  overflow: visible !important;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.dex .ninjas .ninja {
+  position: unset !important;
+  overflow: visible !important;
+}
+
+.dex .ninjas .ninja.ice {
+  left: 80px;
+  top: 40%;
+  max-width: 400px;
+  position: absolute !important;
+}
+
+.dex .ninjas .ninja.shadow {
+  right: 80px;
+  top: 20%;
+  max-width: 300px;
+  position: absolute !important;
 }
 
 @media screen and (max-width: 767px) {
   .dex {
     padding: 8rem 1rem 4rem;
+  }
+  .dex .ninjas .ninja.ice {
+    left: 20px;
+    top: 25%;
+    max-width: 160px;
+  }
+
+  .dex .ninjas .ninja.shadow {
+    right: 20px;
+    top: 20%;
+    max-width: 100px;
   }
 }
 
