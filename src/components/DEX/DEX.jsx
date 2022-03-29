@@ -36,7 +36,11 @@ const DEX = () => {
         >
           <img src={ice} alt="Ice Monkey" />
         </MouseParallaxChild>
-        <MouseParallaxChild factorX={0.07} factorY={0.09} className="ninja shadow">
+        <MouseParallaxChild
+          factorX={0.07}
+          factorY={0.09}
+          className="ninja shadow"
+        >
           <img src={shadow} alt="Shadow Monkey" />
         </MouseParallaxChild>
       </MouseParallaxContainer>
