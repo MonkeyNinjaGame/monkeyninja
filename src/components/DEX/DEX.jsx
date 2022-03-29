@@ -85,7 +85,7 @@ const DEX = () => {
         </p>
       </span>
 
-      <span className="panel-last">
+      <span className="panel-last" style={{ paddingBottom: "20px" }}>
         <h3>
           <u>Step 3</u>
         </h3>

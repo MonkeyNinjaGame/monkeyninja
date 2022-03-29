@@ -171,6 +171,7 @@
   border: 1px solid #ffffff;
   border-radius: 5px;
   width: 100%;
+  max-width: 1024px;
   z-index: 1;
   padding: 2rem 1rem 0;
   margin-bottom: 30px;
