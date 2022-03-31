@@ -236,7 +236,11 @@ const App = ({ isServerInfo }) => {
         </Router>
         <Footer className="footerMain">
           <div className="footerinnerLogo">
-            <img src={MNLogo} onClick={() => window.open("/", "_self")} alt="Monkey Ninja NFT" />
+            <img
+              src={MNLogo}
+              onClick={() => window.open("/", "_self")}
+              alt="Monkey Ninja NFT"
+            />
             {/*<h2>Meta Dynasty</h2>*/}
           </div>
           <div className="footerinnerLeft">
@@ -246,7 +250,7 @@ const App = ({ isServerInfo }) => {
             <MenuItemsFoot2 />
           </div>
           <div className="footerinnerLegal">
-          <Text className="footerText">
+            <Text className="footerText">
               &copy; 2022 Monkey Ninja Dynasty . All Rights Reserved
             </Text>
           </div>
