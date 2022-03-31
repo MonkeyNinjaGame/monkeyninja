@@ -4,7 +4,7 @@ import "./about.css";
 import "../../animation.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-//import border_top from "../../assets/border-top.png";
+import smokebg from "../../assets/smoke01.png";
 //import border_bottom from "../../assets/border-bottom.png";
 
 const WhiteNinja = () => (
@@ -22,6 +22,7 @@ const About = () => {
     <>
       {/*<img src={border_top} className="bordertop" alt="" />*/}
       <div className="about">
+        <img src={smokebg} className="smokebg" alt="" />
         <div className="inner1">
           <h2>
             What Is

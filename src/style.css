@@ -389,41 +389,106 @@ button:hover,
   width: 100%;
 }
 
-.footerMain {
-  text-align: center;
-  background: #222;
-  font-family: "Bakbak One", cursive;
-  /*text-transform: uppercase;*/
-  padding: 8rem 1rem 3rem 1rem;
-  z-index: -2;
+.smokebg {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  height: 100%;
+  bottom: 0;
 }
 
-.footerinner1 {
+.footerMain {
+  text-align: center;
+  background: rgb(34, 34, 34);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 34, 34, 1) 40%,
+    rgba(184, 0, 0, 1) 100%
+  );
+  /*font-family: "Bakbak One", cursive;*/
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 3rem 14rem;
+  z-index: 0;
   display: flex;
-  justify-content: center;
-  padding: 0 0 0 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 8px solid #222;
+  overflow: hidden;
+}
+
+.footerMain a {
+  color: #ffffff;
+}
+
+.footerMain a:hover,
+.footerMain a:active {
+  color: #ffffff;
+}
+
+.footerinnerLogo {
+  width: 100%;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.footerinnerLogo img {
+  margin: 0 auto;
+  max-width: 150px;
+  width: 100%;
+}
+
+.footerinnerLeft {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  justify-content: left;
+  align-items: baseline;
+  padding: 2rem 2rem;
+}
+
+.footerinnerRight {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  justify-content: left;
+  align-items: baseline;
+  padding: 2rem 2rem;
+  text-align: left;
+}
+
+.footerinnerLegal {
+  width: 100%;
+  text-align: center;
+  padding: 0 2rem;
 }
 
 .footerText {
   width: 100%;
-  text-align: center;
   color: #fff;
   display: block;
   padding: 5px 0;
 }
 
-.footerText h2 {
-  font-size: 2rem;
+.footerinnerLogo h2 {
+  font-size: 1.4rem;
   color: #b80000;
   margin-bottom: 10px;
   padding-top: 0;
+  text-transform: capitalize;
   /*text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;*/
 }
 
-.footerText a,
-.footerText a:hover,
-.footerText a:active {
-  color: #f4db73;
+.footerMenu {
+  width: 100%;
+}
+
+.footerMenu a {
+  width: 100%;
+  display: block;
+  text-align: left;
+  padding: 5px 0;
 }
 
 .skew {
@@ -508,11 +573,14 @@ button:hover,
     margin: 1%;
     background: #222222 !important;
   }
+  .footerMain {
+    padding: 3rem 6rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .footerMain {
-    padding: 8rem 1rem 6rem 1rem;
+    padding: 3rem 3rem 6rem;
   }
   .ant-back-top {
     bottom: 60px;
@@ -573,5 +641,20 @@ button:hover,
     width: 100% !important;
     margin: 5px 0;
     background: #222222 !important;
+  }
+  .footerMain {
+    padding: 3rem 1rem 6rem;
+    flex-direction: column;
+  }
+  .footerinnerLeft,
+  .footerinnerRight {
+    flex-basis: auto;
+    padding: 2rem 1rem 0;
+  }
+  .footerMenu a {
+    text-align: center;
+  }
+  .footerinnerLegal {
+    padding-top: 2rem;
   }
 }

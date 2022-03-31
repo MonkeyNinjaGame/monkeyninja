@@ -4,6 +4,7 @@ import dynasty_pic from "../../assets/5-2.png";
 import "./dynasty.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import smokebg from "../../assets/smoke01.png";
 //import border_top from "../../assets/border-top.png";
 //import border_bottom from "../../assets/border-bottom.png";
 
@@ -24,6 +25,7 @@ const Dynasty = () => {
     <>
       {/*<img src={border_top} className="bordertop" alt="" />*/}
       <div className="dynasty">
+        <img src={smokebg} className="smokebg" alt="" />
         <div className="inner2">
           <DynastyImage />
         </div>

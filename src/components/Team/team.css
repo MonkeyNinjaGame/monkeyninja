@@ -4,14 +4,23 @@
   width: 100%;
   min-height: 100vh;
   padding: 8rem 6.4rem;
-  margin-bottom: -120px;
   display: flex;
   flex-direction: column;
-  background: transparent;
+  /*background: rgba(34, 34, 34, 0.9);*/
+  background: rgba(34, 34, 34, 0.8);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 34, 34, 0.8) 40%,
+    rgba(184, 0, 0, 0.8) 100%
+  );
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #b80000;
+  /*background: transparent;
   background-image: url("assets/bg-scroll-01.png");
   background-position: right center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: scroll;*/
+  position: relative;
 }
 
 .team .inner1 {
@@ -25,20 +34,19 @@
 
 .team .inner1 h2 {
   padding-bottom: 40px;
-  color: #b80000;
   text-align: center;
-  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+  /*text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;*/
 }
 
 .team .inner2 .teamwrap h3 {
   text-align: center;
-  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+  /*text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;*/
 }
 
 .team .inner1 p {
   color: #fff;
   text-align: center;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  /*text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;*/
 }
 
 .team .inner2 {

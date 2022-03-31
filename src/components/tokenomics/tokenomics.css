@@ -30,7 +30,6 @@
 
 .tokenomics .inner2 h2 {
   padding-bottom: 40px;
-  color: #b80000;
   font-weight: bold;
   text-align: center;
 }
@@ -60,7 +59,7 @@
 
 @media screen and (max-width: 1024px) {
   .tokenomics {
-    padding: 8rem 1rem 2rem 1rem;
+    padding: 8rem 1rem 8rem 1rem;
     height: auto;
   }
   .tokenomics .inner2 {
@@ -75,7 +74,7 @@
 
 @media screen and (max-width: 767px) {
   .tokenomics {
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 6rem 1rem 6rem 1rem;
     flex-wrap: wrap;
   }
   .tokenomics .inner1 {
@@ -95,6 +94,6 @@
 
 @media screen and (max-width: 480px) {
   .tokenomics {
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 6rem 1rem 6rem 1rem;
   }
 }

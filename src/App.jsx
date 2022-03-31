@@ -13,6 +13,8 @@ import "./animation.css";
 import star from "assets/star.png";
 import MNLogo from "assets/logo.png";
 import MenuItems from "./components/MenuItems";
+import MenuItemsFoot from "./components/MenuItemsFoot";
+import MenuItemsFoot2 from "./components/MenuItemsFoot2";
 //import DownloadWP from "components/DownloadWP";
 import Account from "components/Account/Account";
 //import TokenPrice from "components/TokenPrice";
@@ -82,7 +84,7 @@ const styles = {
   },
   logoCenter: {
     height: "auto",
-    margin: "100px",
+    margin: "0",
     //maxWidth: "180px",
     //minWidth: "40px",
     cursor: "pointer",
@@ -233,27 +235,21 @@ const App = ({ isServerInfo }) => {
           </div>
         </Router>
         <Footer className="footerMain">
-          <div className="footerinner1">
-            <Logo
-              style={styles.logoCenter}
-              onClick={() => window.open("/", "_self")}
-            />
+          <div className="footerinnerLogo">
+            <img src={MNLogo} onClick={() => window.open("/", "_self")} alt="Monkey Ninja NFT" />
+            {/*<h2>Meta Dynasty</h2>*/}
           </div>
+          <div className="footerinnerLeft">
+            <MenuItemsFoot />
+          </div>
+          <div className="footerinnerRight">
+            <MenuItemsFoot2 />
+          </div>
+          <div className="footerinnerLegal">
           <Text className="footerText">
-            <h2>Meta Dynasty</h2>
-            <a href="https://docs.monkeyninja.io">Whitepaper</a> .{" "}
-            <a href="https://docs.monkeyninja.io/legal/terms-of-use">Terms</a> .{" "}
-            <a href="https://docs.monkeyninja.io/legal/privacy-policy">
-              Policy
-            </a>{" "}
-            .{" "}
-            <a href="https://docs.monkeyninja.io/legal/partners-and-investors">
-              Partner &amp; Investor Inquiries
-            </a>
-          </Text>
-          <Text className="footerText">
-            &copy; 2022 Monkey Ninja Dynasty . All Rights Reserved
-          </Text>
+              &copy; 2022 Monkey Ninja Dynasty . All Rights Reserved
+            </Text>
+          </div>
         </Footer>
       </Layout>
     </>
