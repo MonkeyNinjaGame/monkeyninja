@@ -30,6 +30,7 @@
   padding: 2rem 2rem 0;
   text-align: center;
   background: transparent;
+  z-index: 0;
 }
 
 .team .inner1 h2 {
@@ -60,6 +61,7 @@
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: center;
+  z-index: 0;
 }
 
 .team .socials {
