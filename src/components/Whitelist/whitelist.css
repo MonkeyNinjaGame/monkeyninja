@@ -30,8 +30,14 @@
 .whitelist .inner-left {
   border: 1px solid #ffffff;
   border-radius: 5px;
-  background: rgba(34, 34, 34, 0.9);
-  /*background-image: url("assets/bg-scroll-01.png");
+  background: rgba(34, 34, 34, 0.8);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 34, 34, 0.8) 40%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  /*background: rgba(34, 34, 34, 0.9);
+  background-image: url("assets/bg-scroll-01.png");
   background-position: center center;
   background-size: cover;
   background-attachment: scroll;*/

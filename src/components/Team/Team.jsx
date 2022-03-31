@@ -2,6 +2,7 @@ import React from "react";
 import will from "../../assets/fire-head-01.png";
 import nate from "../../assets/shadow-head-01.png";
 import daniel from "../../assets/ice-head-01.png";
+import alpha from "../../assets/shinobi-head-01.png";
 import "./team.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -39,6 +40,16 @@ const Daniel = () => (
   />
 );
 
+const Alpha = () => (
+  <LazyLoadImage
+    alt={"Alpha"}
+    src={alpha}
+    useIntersectionObserver="true"
+    effect="blur"
+    delayMethod="throttle"
+  />
+);
+
 const Team = () => {
   return (
     <>
@@ -67,6 +78,12 @@ const Team = () => {
             <h3>Nate</h3>
             <p style={{ marginTop: "-15px" }}>(@N8TR0N)</p>
             <p>Website / Web3 Dev / Design</p>
+          </div>
+          <div className="teamwrap">
+            <Alpha />
+            <h3>Alpha</h3>
+            <p style={{ marginTop: "-15px" }}>(@AlphaTrader)</p>
+            <p>Team Leader / Community Manager</p>
           </div>
         </div>
       </div>

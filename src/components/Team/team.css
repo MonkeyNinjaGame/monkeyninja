@@ -70,7 +70,7 @@
 
 /*** TORN EDGES ***/
 .team .inner2 .teamwrap {
-  flex-basis: 33.333%;
+  flex-basis: 25%;
   padding: 1rem;
 }
 
