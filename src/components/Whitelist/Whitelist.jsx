@@ -44,7 +44,7 @@ const renderleft = ({ days, hours, minutes, seconds, completed }) => {
       <>
         <span className="light-opened">.</span>
         <h4 className="data-title">Spots Filled</h4>
-        <span className="data">0/1000</span>
+        <span className="data">21/1000</span>
         <h4 className="data-title">Time Left</h4>
         <span className="data">
           {formatDate(days)}:{formatTime(hours)}:{formatTime(minutes)}:
