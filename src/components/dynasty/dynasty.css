@@ -29,6 +29,7 @@
   padding: 2rem;
   background: transparent;
   border-radius: 1em;
+  z-index: 0;
 }
 
 .dynasty .inner2 {
@@ -36,6 +37,7 @@
   flex-basis: 100%;
   padding: 2rem 2em 0;
   margin-bottom: -10px;
+  z-index: 0;
 }
 
 .dynasty .inner1 h2 {

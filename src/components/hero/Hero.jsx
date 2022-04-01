@@ -60,7 +60,7 @@ const Hero = () => {
         </h1>
         <h2>Meta Dynasty</h2>
         <h3>
-          <b>FREE TO PLAY &amp; PLAY TO EARN!</b>
+          FREE TO PLAY &amp; PLAY TO EARN!
           <br />
           Part collectible NFT, part role play,
           <br />

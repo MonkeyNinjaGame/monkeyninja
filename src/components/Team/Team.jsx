@@ -81,7 +81,7 @@ const Team = () => {
           </div>
           <div className="teamwrap">
             <Alpha />
-            <h3>Alpha</h3>
+            <h3>Josh</h3>
             <p style={{ marginTop: "-15px" }}>(@AlphaTrader)</p>
             <p>Team Leader / Community Manager</p>
           </div>
