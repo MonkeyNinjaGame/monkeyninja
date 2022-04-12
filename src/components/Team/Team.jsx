@@ -1,8 +1,8 @@
 import React from "react";
-import will from "../../assets/fire-head-01.png";
-import nate from "../../assets/shadow-head-01.png";
-import daniel from "../../assets/ice-head-01.png";
-import alpha from "../../assets/shinobi-head-01.png";
+import will from "../../assets/fire-head-02.png";
+import nate from "../../assets/shadow-head-02.png";
+import daniel from "../../assets/ice-head-02.png";
+import alpha from "../../assets/shinobi-head-02.png";
 import "./team.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";

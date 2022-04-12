@@ -19,7 +19,7 @@ const Mint = () => {
         backgroundAttachment: "fixed",
       }}
     >
-      <h3>Monkey Ninja</h3>
+      <h5>Monkey Ninja</h5>
       <h1>NFT Mint</h1>
       <img
         src={shinobi}
